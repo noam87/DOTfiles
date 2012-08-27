@@ -61,13 +61,13 @@ setup to your `.zshrc` like so:
 	cat .bash_profile >> .zshrc
 
 I am also using the *oh-my-zsh* Zsh framework. For more info on *oh-my-zsh* and
-my `Custom/` plugins folder, see my [DOTomz\_Custom][]
+my `Custom/` plugins folder, see my [DOTomz\_Custom](https://github.com/CLUSTERfoo/DOTomz_Custom)
 
 
 ###Vim and Pathogen
 
 I am using Vim as my editor and the Pathogen plugin to manage my plugins. For 
-this see, my `.vim` files in my [DOTvim][] repo.
+this see, my `.vim` files in my [DOTvim](https://github.com/CLUSTERfoo/DOTvim) repo.
 
 
 
@@ -75,7 +75,7 @@ this see, my `.vim` files in my [DOTvim][] repo.
 ##Installation
 
 This guide assumes you've installed git in your system. If not, 
-[get it here][git].
+[get it here](http://git-scm.com/).
 
 
 ### 1 - Make Zsh Your Default Shell
@@ -95,7 +95,7 @@ The command to switch back to bash is simply:
 *You can skip this step for now and come back to it later. All this does is make
 your Zsh all pretty with syntax highlighting and other whatnots.*
 
-See my [DOTomz\_Custom][] repo for instructions.
+See my [DOTomz\_Custom](https://github.com/CLUSTERfoo/DOTomz_Custom) repo for instructions.
 
 
 ### 2 - Clone DOTfiles Repo ##
@@ -139,7 +139,7 @@ all your changes.
 ##Other Packages
 
 ###Homebrew
-I am using [Homebrew][], "The missing package manager for OS X". It's awesome.
+I am using [Homebrew](http://mxcl.github.com/homebrew/), "The missing package manager for OS X". It's awesome.
 My current packages include:
 
 * `ack` 	-->	Like grep, but I hear is better.
@@ -161,12 +161,3 @@ My current packages include:
 
 GPL v3.0 or Creative Commons or whichever of the two applies. 
 
-
-
-
-[DOTvim]: 		https://github.com/CLUSTERfoo/DOTvim 
-			"My DOTvim repo"
-[DOTomz\_Custom]: 	https://github.com/CLUSTERfoo/DOTomz_Custom
-			"My DOTomz_Custom repo"
-[Homebrew]:		http://mxcl.github.com/homebrew/
-			"Homebrew homepage"
