@@ -215,11 +215,11 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1049 61 445 270 0 0 1680 1028 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>240 418 924 485 0 0 1680 1050 </string>
+	<string>240 402 924 485 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>90 335 665 451 0 0 1680 1028 </string>
+	<string>0 0 1680 1050 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>178 301 825 451 0 0 1680 1028 </string>
+	<string>178 301 665 451 0 0 1680 1028 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1737,7 +1737,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2012-08-27T03:16:28Z</date>
+	<date>2012-08-30T01:26:10Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1767,7 +1767,7 @@
 	<key>UseCompactLabel</key>
 	<true/>
 	<key>UseLionStyleFullscreen</key>
-	<true/>
+	<false/>
 	<key>WebKitDefaultFontSize</key>
 	<integer>11</integer>
 	<key>WebKitStandardFont</key>
