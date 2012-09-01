@@ -1,4 +1,4 @@
-#Noam's DOTfiles v0.1.2
+#Noam's DOTfiles v0.2
 
 Blog: <http://CLUSTERfoo.com>
 
@@ -19,9 +19,9 @@ My code on github: <https://github.com/CLUSTERfoo/>
 
 ##In This Packge
 
-* `.zshrc`	-->	Settings for Zsh (Z-shell).
-* `.vimrc` 	-->	Settings for Vim. 
-* `.iTerm/`	-->	Settings folder for the iTerm2 terminal emulator on 
+* `zshrc`	-->	Settings for Zsh (Z-shell).
+* `vimrc` 	-->	Settings for Vim. 
+* `iTerm/`	-->	Settings folder for the iTerm2 terminal emulator on 
 OS X.
 * `.git`	-->	This is a git repo. Simply  use pull to upgrade to 
 			llatest version (or push your own custom repo).
@@ -95,11 +95,11 @@ First, you must clone this repo into your HOME folder. In your terminal, type:
 
 ###3 - Automatic Installation
 
-You now have a hidden .DOTfiles directory in your home folder. In this folder 
+You now have a DOTfiles directory in your home folder. In this folder 
 are all the files listed in the "In This Package" section. To install everything
 automatically, simply run the `make.sh` script using the following command:
 
-	cd ~/.DOTfiles
+	cd ~/DOTfiles
 	source make.sh
 
 The `make.sh` script is commented and easy to read. Or:
@@ -109,9 +109,9 @@ The `make.sh` script is commented and easy to read. Or:
 You can it yourself. First, backup your old dotfiles. Next, create symbolic
 links of the dotfiles in this package:
 
-	ln -s ~/.DOTfiles/.iTerm/ ~/.iTerm
-	ln -s  ~/.DOTfiles/.vimrc ~/.vimrc
-	ln -s  ~/.DOTfiles/.zshrc ~/.zshrc
+	ln -s ~/DOTfiles/iTerm/ ~/.iTerm
+	ln -s  ~/DOTfiles/vimrc ~/.vimrc
+	ln -s  ~/DOTfiles/zshrc ~/.zshrc
 
 And you're done!
 
@@ -139,7 +139,7 @@ My current packages include:
 
 ###KeyRemap4MacBook
 
-I use this to remap my CAPSLOCk to ESCAPE and vice-versa. One of the best
+I use this to remap my CAPSLOCK to ESC and vice-versa. One of the best
 decisions I've ever made! -- Your tendons will thank you if you're a Vim user.
 
 ###DiffMerge
