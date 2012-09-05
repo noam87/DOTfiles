@@ -1,4 +1,4 @@
-#Noam's DOTfiles v0.2
+#Noam's DOTfiles v0.3
 
 Blog: <http://CLUSTERfoo.com>
 
@@ -44,17 +44,11 @@ setup to your `.zshrc` like so:
 
 	cat .bash_profile >> .zshrc
 
-I am also using the *oh-my-zsh* Zsh framework. For more info on *oh-my-zsh* and
-my `Custom/` plugins folder, see my 
-[DOTomz\_Custom](https://github.com/CLUSTERfoo/DOTomz_Custom) repo.
-
+I am also using the *oh-my-zsh* Zsh framework. 
 
 ###Vim and Pathogen
 
-I am using Vim as my editor and the Pathogen plugin to manage my plugins. For 
-this see, my `.vim` files in my [DOTvim](https://github.com/CLUSTERfoo/DOTvim) 
-repo.
-
+I am using Vim as my editor and the Pathogen plugin to manage my plugins. 
 
 
 
@@ -81,8 +75,6 @@ The command to switch back to bash is simply:
 *You can skip this step for now and come back to it later. All this does is make
 your Zsh all pretty with syntax highlighting and other whatnots.*
 
-See my [DOTomz\_Custom](https://github.com/CLUSTERfoo/DOTomz_Custom) repo for 
-instructions.
 
 
 ### 2 - Clone DOTfiles Repo ##

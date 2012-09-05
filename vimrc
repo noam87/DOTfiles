@@ -12,7 +12,6 @@ call pathogen#infect()
 :set ruler
 :set hlsearch
 :set colorcolumn=80	" Make sure lines don't go over 80 columns. 
-			" Change to 100 for PHP
 colorscheme delek
 " For MacVim
 if has('gui_running')
@@ -21,6 +20,13 @@ else
     set background=dark
 endif
 
+" Indentation
+" -----------
+set expandtab		" Turn tabs to spaces
+set shiftwidth=4	" Make indentation 4 spaces
+set softtabstop=4
+set tabstop=4
+" use :retab to reformat all existing tabs in a file
 
 " For poweline plugin
 set nocompatible
