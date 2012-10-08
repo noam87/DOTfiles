@@ -7,7 +7,7 @@ Blog: <http://CLUSTERfoo.com>
 
 My code on github: <https://github.com/CLUSTERfoo/>
 
-![](./Other/terminal.png)
+![](http://i.imgur.com/ajjNy.png)
 
 ##TOC
 
