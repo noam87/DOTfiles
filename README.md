@@ -1,4 +1,4 @@
-#Noam's DOTfiles v0.3.1
+#Noam's DOTfiles v0.4
 
 This is my personal home directory and dev environment setup. I've put it 
 together mostly for personal use. 
@@ -97,8 +97,9 @@ links of the dotfiles in this package by copying the following commands into
 your terminal:
 
 	ln -s ~/DOTfiles/iTerm/ ~/.iTerm
-	ln -s  ~/DOTfiles/vimrc ~/.vimrc
-	ln -s  ~/DOTfiles/zshrc ~/.zshrc
+	ln -s ~/DOTfiles/vimrc ~/.vimrc
+	ln -s ~/DOTfiles/zshrc ~/.zshrc
+    ln -s ~/DOTfiles/tmux.conf ~/.tmux.conf 
 
 And you're done!
 
@@ -134,6 +135,14 @@ decisions I've ever made! -- Your tendons will thank you if you're a Vim user.
 ###DiffMerge
 
 It diffs, it merges. That about it.
+
+##Quick Changelog
+
+    v0.4    :   Added Tmux configuration file.
+                Switched vim colorscheme to 'Pablo'.
+    v0.3.1  :   Removed old setup script.
+                New Brew formulas.
+                README edit. 
 
 ##License
 

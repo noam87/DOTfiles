@@ -12,8 +12,8 @@ set showmode
 set ruler
 set hlsearch
 set colorcolumn=80	" Make sure lines don't go over 80 columns. 
-set background=dark
-colorscheme macvim
+" set background=dark
+colorscheme pablo
 
 
 " Indentation
