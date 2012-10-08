@@ -5,20 +5,16 @@ call pathogen#infect()
 
 " UI
 " --
-:syntax on
-:set number
-:set showmatch
-:set showmode
-:set ruler
-:set hlsearch
-:set colorcolumn=80	" Make sure lines don't go over 80 columns. 
-colorscheme delek
-" For MacVim
-if has('gui_running')
-	:colorscheme desert
-else
-    set background=dark
-endif
+syntax on
+set number
+set showmatch
+set showmode
+set ruler
+set hlsearch
+set colorcolumn=80	" Make sure lines don't go over 80 columns. 
+set background=dark
+colorscheme macvim
+
 
 " Indentation
 " -----------
@@ -36,17 +32,17 @@ set encoding=utf-8	" Necessary to show unicode gylphs
 
 " Functionaslity
 " --------------
-:set autoindent
-:set mouse=a
+set autoindent
+set mouse=a
 
 
 " Misc
 " ----
-:set warn 
-:set viewdir=$HOME/.vimviews//
-:set autoprint
-:set report=1
-:set history=100
+set warn 
+set viewdir=$HOME/.vimviews//
+set autoprint
+set report=1
+set history=100
 
 " Key maps
 " ---------- 
