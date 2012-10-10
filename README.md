@@ -1,4 +1,4 @@
-#Noam's DOTfiles v0.4
+#Noam's DOTfiles v0.5
 
 This is my personal home directory and dev environment setup. I've put it 
 together mostly for personal use. 
@@ -22,14 +22,14 @@ My code on github: <https://github.com/CLUSTERfoo/>
 
 ##In This Packge
 
-* `zshrc`	    :	Settings for Zsh (Z-shell).
-* `vimrc` 	    :	Settings for Vim. 
-* `iTerm/`	    :	Settings folder for the iTerm2 terminal emulator on 
+* `zshrc`       :   Settings for Zsh (Z-shell).
+* `vimrc`       :   Settings for Vim. 
+* `iTerm/`      :   Settings folder for the iTerm2 terminal emulator on 
 OS X.
-* `.git`	    :	This is a git repo. Simply  use pull to upgrade to 
-			        latest version (or push your own custom repo).
-* `setup.py`	:	Setup script. Not yet written. 
-* `README.md`	:	You're looking at it.
+* `.git`        :   This is a git repo. Simply  use pull to upgrade to 
+                    latest version (or push your own custom repo).
+* `setup.py`    :   Setup script. Not yet written. 
+* `README.md`   :   You're looking at it.
 
 
 
@@ -43,7 +43,7 @@ I have switched from Bash to Zsh. I highly recommend it! I'm using the
 [*oh-my-zsh*](https://github.com/robbyrussell/oh-my-zsh) Zsh configuration 
 framework.
 
-###Vim and Pathogen
+###Vim Plugins and Pathogen
 
 I am using Vim as my editor and the Pathogen plugin to manage my plugins. These
 are the plugins I'm currently using:
@@ -55,7 +55,10 @@ are the plugins I'm currently using:
                     open files and directories. It presents the filesystem to 
                     you in the form of a tree which you manipulate with the 
                     keyboard and/or mouse. It also allows you to perform simple 
-                    filesystem operations."
+                    filesystem operations.
+* [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
+                :   Indent Guides is a plugin for visually displaying indent 
+                    levels in Vim. Can detect both tab and space indent styles.
 
 
 
@@ -66,11 +69,11 @@ are the plugins I'm currently using:
 Zsh comes with most popular UNIX systems. To set it as your default shell,
 simply input the following command into your terminal:
 
-	chsh -s /bin/zsh
+    chsh -s /bin/zsh
 
 The command to switch back to bash is simply:
 
-	chsh -s /bin/bash
+    chsh -s /bin/bash
 
 
 ### 1 (optional) - Get [*Oh-My-Zsh*](https://github.com/robbyrussell/oh-my-zsh)
@@ -83,8 +86,8 @@ plugins.
 
 Clone this repo into your $HOME folder. In your terminal, type:
 
-	cd ~
-	git clone https://github.com/CLUSTERfoo/DOTfiles.git
+    cd ~
+    git clone https://github.com/CLUSTERfoo/DOTfiles.git
 
 Alternatively, you can simply download the latest tagged zip file and dump it in
 your home folder.
@@ -96,10 +99,12 @@ First, backup your old dotfiles. Next, create symbolic
 links of the dotfiles in this package by copying the following commands into
 your terminal:
 
-	ln -s ~/DOTfiles/iTerm/ ~/.iTerm
-	ln -s ~/DOTfiles/vimrc ~/.vimrc
-	ln -s ~/DOTfiles/zshrc ~/.zshrc
+    ln -s ~/DOTfiles/iTerm/ ~/.iTerm
+    ln -s ~/DOTfiles/vimrc ~/.vimrc
+    ln -s ~/DOTfiles/zshrc ~/.zshrc
     ln -s ~/DOTfiles/tmux.conf ~/.tmux.conf 
+    mkdir ~/.vim/colors                                             # Might already exist.
+    ln -s ~/DOTfiles/jellybeans.vim ~/.vim/colors/jellybeans.vim    # Custom vim colorscheme
 
 And you're done!
 
@@ -118,11 +123,11 @@ all your changes.
 I am using [Homebrew](http://mxcl.github.com/homebrew/), "The missing package 
 manager for OS X". It's awesome. My current packages include:
 
-* `ack` 	:   Kinda like grep.
+* `ack`     :   Kinda like grep.
 * `doxygen` :   Turns code into documentation you can browse through.
-* `lynx`	:   A text web browser for your terminal. Because... who knows. The 
+* `lynx`    :   A text web browser for your terminal. Because... who knows. The 
                 zombie apocalypse and all you have is a Commodore. 
-* `macvim`	:   A GUI Vim editor for OS X.
+* `macvim`  :   A GUI Vim editor for OS X.
 * `tmux`    :   Indispensable for a terminal-only environment. Create multiple
                 terminal sessions inside a single terminal window or remote
                 session.
@@ -138,11 +143,14 @@ It diffs, it merges. That about it.
 
 ##Quick Changelog
 
+    v0.5    :   Vim keybinding <C-F> auto-closes c-style brackets.
+                Switched vim colorscheme to 'Jellybeans' (custom).
+                Added vim plugin 'Indent Guides'.
     v0.4    :   Added Tmux configuration file.
                 Switched vim colorscheme to 'Pablo'.
     v0.3.1  :   Removed old setup script.
                 New Brew formulas.
-                README edit. 
+                README edit.
 
 ##License
 
