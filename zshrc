@@ -1,8 +1,23 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
-# For homebrew. fixes issue with order of path directories.
-export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
+# For homebrew on Mac. fixes issue with order of path directories.
+# export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
+
+# set to one or two monitors (customize for your own setup. read xrandr manual &
+# tutorials for info.
+
+# set dual monitors
+dual () {
+    echo "xrandr --output VGA-0 --primary --left-of HDMI-0 --output HDMI-0 --auto"
+    xrandr --output VGA-0 --primary --left-of HDMI-0 --output HDMI-0 --auto
+}
+
+# set single monitor
+single () {
+    echo "xrandr --output HDMI-0 --off"
+    xrandr --output HDMI-0 --off
+}
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -13,8 +28,6 @@ ZSH_THEME="robbyrussell"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias cd_themes="cd /applications/mamp/htdocs/wordpress/wp-content/themes"
-alias MAMP_mysql="/Applications/MAMP/Library/bin/mysql"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -40,3 +53,6 @@ source $ZSH/oh-my-zsh.sh
 
 # set vi mode
 set -o vi
+
+
+

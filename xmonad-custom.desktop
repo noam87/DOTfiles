@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=Cf XMonad
+Comment=Custom session to use with Xmonad windows manager. 
+Exec=/etc/X11/Xsession

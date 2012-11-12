@@ -1,4 +1,4 @@
-#Noam's DOTfiles v0.5.1
+#Noam's DOTfiles 0.6
 
 This is my personal home directory and dev environment setup. I've put it 
 together mostly for personal use. 
@@ -6,8 +6,6 @@ together mostly for personal use.
 Blog: <http://CLUSTERfoo.com>
 
 My code on github: <https://github.com/CLUSTERfoo/>
-
-![](http://i.imgur.com/ajjNy.png)
 
 ##TOC
 
@@ -23,6 +21,10 @@ My code on github: <https://github.com/CLUSTERfoo/>
 ##In This Packge
 
 * `zshrc`       :   Settings for Zsh (Z-shell).
+* `xmobarrc`    :   Xmobar settings.
+* `xsession`    :   Xsession executable.
+* `xmonad-custom.desktop`   :    Linux desktop entry for my xmonad setup.
+* `xmonad/`     :   Settings for Xmonad windows manager (Linux)   
 * `vimrc`       :   Settings for Vim. 
 * `iTerm/`      :   Settings folder for the iTerm2 terminal emulator on 
 OS X.
@@ -96,15 +98,13 @@ your home folder.
 ###3 - Installation
 
 First, backup your old dotfiles. Next, create symbolic
-links of the dotfiles in this package by copying the following commands into
-your terminal:
+links of the dotfiles in this package to the home folder, for example:
 
     ln -s ~/DOTfiles/iTerm/ ~/.iTerm
     ln -s ~/DOTfiles/vimrc ~/.vimrc
-    ln -s ~/DOTfiles/zshrc ~/.zshrc
-    ln -s ~/DOTfiles/tmux.conf ~/.tmux.conf 
-    mkdir ~/.vim/colors                                             # Might already exist.
-    ln -s ~/DOTfiles/jellybeans.vim ~/.vim/colors/jellybeans.vim    # Custom vim colorscheme
+
+The only exception is `xmonad-custom.desktop`: its symbolic link should go in 
+`/usr/share/xsessions` (at least in Ubuntu; your system may differ). 
 
 And you're done!
 
@@ -123,7 +123,7 @@ all your changes.
 I am using [Homebrew](http://mxcl.github.com/homebrew/), "The missing package 
 manager for OS X". It's awesome. My current packages include:
 
-* `ack`     :   Kinda like grep.
+* `ack`     :   Kinda like grep. "`ack-grep`" in some Linux distros.
 * `doxygen` :   Turns code into documentation you can browse through.
 * `lynx`    :   A text web browser for your terminal. Because... who knows. The 
                 zombie apocalypse and all you have is a Commodore. 
@@ -140,17 +140,6 @@ decisions I've ever made! -- Your tendons will thank you if you're a Vim user.
 ###DiffMerge
 
 It diffs, it merges. That about it.
-
-##Quick Changelog
-
-    v0.5    :   Vim keybinding <C-F> auto-closes c-style brackets.
-                Switched vim colorscheme to 'Jellybeans' (custom).
-                Added vim plugin 'Indent Guides'.
-    v0.4    :   Added Tmux configuration file.
-                Switched vim colorscheme to 'Pablo'.
-    v0.3.1  :   Removed old setup script.
-                New Brew formulas.
-                README edit.
 
 ##License
 
