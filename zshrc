@@ -4,8 +4,8 @@ ZSH=$HOME/.oh-my-zsh
 # For homebrew on Mac. fixes issue with order of path directories.
 # export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 
-# set to one or two monitors (customize for your own setup. read xrandr manual &
-# tutorials for info.
+#lampp
+alias lampp="sudo /opt/lampp/lampp"
 
 # set dual monitors
 dual () {
