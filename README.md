@@ -3,6 +3,12 @@
 This is my personal home directory and dev environment setup. I've put it 
 together mostly for personal use. 
 
+![Xmonad desktop running Vim and git-cola](http://i.imgur.com/RWcox.png)
+
+
+[Full Screen](http://clusterfoo.com/wp-content/uploads/2012/11/dotfiles-06.png)
+
+
 Blog: <http://CLUSTERfoo.com>
 
 My code on github: <https://github.com/CLUSTERfoo/>
@@ -158,6 +164,7 @@ I am running a custom X environment that uses the following packages:
 * `xfce4-appfinder` 
                 :    App finder. Kinda sucky, but it's the only one I found.
                      PCman had an app finding feature I miss. 
+* `meld`	     :    Diff / Merge GUI.
 
 ## Mac OS Tools
 
