@@ -17,7 +17,8 @@ call pathogen#infect()
     set wrap                " wrap if text is too long to display
     set colorcolumn=80	    " Make sure lines don't go over 80 columns.
     " set background=dark
-    colorscheme jellybeans
+    " colorscheme jellybeans
+    colorscheme pablo
 
     " ---------------------
     " Display <tab>s, etc.
