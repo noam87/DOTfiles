@@ -63,12 +63,6 @@ The command to switch back to bash is simply:
     chsh -s /bin/bash
 
 
-### 1 (optional) - Get [*Oh-My-Zsh*](https://github.com/robbyrussell/oh-my-zsh)
-
-Provides some really neat features like shell syntax highlighting and other Zsh
-plugins.
-
-
 ### 2 - Clone DOTfiles Repo ##
 
 Clone this repo into your $HOME folder. In your terminal, type:
@@ -113,8 +107,8 @@ configuration framework.
 
 ###Vim Plugins and Pathogen
 
-I am using Vim as my editor and the Pathogen plugin to manage my plugins. These
-are the plugins I'm currently using:
+I am using Vim as my editor and the [Pathogen](https://github.com/tpope/vim-pathogen) 
+plugin to manage my plugins. These are the plugins I'm currently using:
 
 * [Vim Powerline](https://github.com/Lokaltog/vim-powerline)
                 :    A better-looking, more functional vim statusline.
@@ -127,16 +121,17 @@ are the plugins I'm currently using:
 * [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
                 :    Indent Guides is a plugin for visually displaying indent 
                      levels in Vim. Can detect both tab and space indent styles.
-###Other Packages:
+###Other UNIX Tools:
 
 * `ack`         :    Kinda like grep. "`ack-grep`" in some Linux distros.
 * `doxygen`     :    Turns code into documentation you can browse through.
-* `macvim`      :    A GUI Vim editor for OS X.
 * `tmux`        :    Indispensable for a terminal-only environment. Create multiple
                      terminal sessions inside a single terminal window or remote
                      session.
 * `mc` ("Midnight Commander")
                 :    File manager / browser for your terminal.
+
+
 ## Linux Tools
 
 ###Custom Environment
@@ -145,12 +140,11 @@ I am running a custom X environment that uses the following packages:
 
 * [Xmonad](http://xmonad.org/)        
                 :     A tiling windows manager, built in Haskell, easy to customize
-                      and extend (also in Haskell), and light as fuck. 
+                      and extend (also in Haskell), and super light on resources. 
                       YOU WANT THIS.
 * Xmobar        :     Light status bar (also Haskell-based). 
 * Trayer or StaloneTray
-                :     As a dock for icons. I like StaloneTray better because it's 
-                      clickable, but it's been acting out on me so I'm using Trayer. 
+                :     As a dock for icons. 
 * Nautilus or `pcmanfm`
                 :     Graphical file managers / desktops. PCman is much nicer and 
                       lighter, but also started acting up for no reason so I'm 
@@ -161,6 +155,7 @@ I am running a custom X environment that uses the following packages:
 * ReText        :    Markdown editor with live preview.  
 * `arandr`      :    Quick GUI for `xrandr` (for working with multiple monitors).
 * `clipit`      :    Clipboard that remembers you copy-paste history. 
+                     Like Butler's clipboard function on Mac OS.
 * `xfce4-appfinder` 
                 :    App finder. Kinda sucky, but it's the only one I found.
                      PCman had an app finding feature I miss. 
@@ -170,6 +165,7 @@ I am running a custom X environment that uses the following packages:
 
 * Homebrew      :    I am using [Homebrew](http://mxcl.github.com/homebrew/), "The 
                      missing package manager for OS X". It's awesome.
+* `macvim`      :    A GUI Vim editor for OS X.
 * KeyRemap4MacBook    
                 :    I use this to remap my CAPSLOCK to ESC and vice-versa.
                      Your tendons will thank you if you're a Vim user.
@@ -181,7 +177,7 @@ I am running a custom X environment that uses the following packages:
 ##Windows Tools
 
 * Internet Explorer.
-* Clonazepam, Jim Beam and a sledgehammer.
+* Jim Beam and a sledgehammer.
 
 ##License
 
