@@ -1,0 +1,6 @@
+[
+    { 
+        "keys": ["ctrl+alt+e"], 
+        "command": "run_macro_file", "args": {"file": "Packages/User/ruby-end.sublime-macro"} 
+    }
+]

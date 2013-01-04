@@ -1,0 +1,27 @@
+[
+	{
+		"args":
+		{
+			"characters": "\n"
+		},
+		"command": "insert"
+	},
+	{
+		"args": null,
+		"command": "left_delete"
+	},
+	{
+		"args":
+		{
+			"characters": "end"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"file": "Packages/Default/Add Line Before.sublime-macro"
+		},
+		"command": "run_macro_file"
+	}
+]

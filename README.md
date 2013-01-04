@@ -1,4 +1,4 @@
-#Noam's DOTfiles 0.6
+#Noam's DOTfiles 0.7
 
 This is my personal home directory and dev environment setup. I've put it 
 together mostly for personal use. 
@@ -82,8 +82,13 @@ links of the dotfiles in this package to the home folder, for example:
     ln -s ~/DOTfiles/iTerm/ ~/.iTerm
     ln -s ~/DOTfiles/vimrc ~/.vimrc
 
-The only exception is `xmonad-custom.desktop`: its symbolic link should go in 
+**Eceptions:** 
+
+* `xmonad-custom.desktop`: its symbolic link should go in 
 `/usr/share/xsessions` (at least in Ubuntu; your system may differ). 
+
+* `Sublime Text 2/Packages/User`: its symlink should go in the `Packages/User`
+directory of your Sublime installation. 
 
 And you're done!
 
