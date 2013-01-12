@@ -1,6 +1,55 @@
 [
-    { 
-        "keys": ["ctrl+alt+e"], 
-        "command": "run_macro_file", "args": {"file": "Packages/User/ruby-end.sublime-macro"} 
+
+// Movement.
+
+    // Move one space forward.
+    // For exiting enclosed "", {}, etc.
+    {
+        "keys": ["alt+space"], 
+        "command": "move", 
+        "args": {"by": "characters", "forward": true}
+    },
+
+    // hjkl remap.
+        // h = left.
+        {
+            "keys": ["alt+h"], 
+            "command": "move", 
+            "args": {"by": "characters", "forward": false}
+        },
+        // j = down.
+        {
+            "keys": ["alt+j"], 
+            "command": "move", 
+            "args": {"by": "lines", "forward": true}
+        },
+        // k = up.
+        {
+            "keys": ["alt+k"], 
+            "command": "move", 
+            "args": {"by": "lines", "forward": false}
+        },
+        // l = right.
+        {
+            "keys": ["alt+l"], 
+            "command": "move", 
+            "args": {"by": "characters", "forward": true}
+        },
+
+// Ruby & Rails
+
+    // Move to new line and insert "end" statement below new line. 
+    {
+        "keys": ["alt+e"], 
+        "command": "run_macro_file", 
+        "args": {"file": "Packages/User/ruby-end.sublime-macro"}
+    },
+
+    // Ruby <%= %> .erb tags. 
+    {
+        "keys": ["shift+alt+5"], 
+        "command": "insert_snippet", 
+        "args": {"contents": "<%= $0 %>"}
     }
+
 ]

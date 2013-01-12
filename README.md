@@ -1,12 +1,12 @@
-#Noam's DOTfiles 0.7
+#Noam's DOTfiles, Jan 2013
 
 This is my personal home directory and dev environment setup. I've put it 
 together mostly for personal use. 
 
-![Xmonad desktop running Vim and git-cola](http://i.imgur.com/RWcox.png)
+![Xmonad desktop running Vim and git-cola](http://i.imgur.com/5nE0V.png?1)
 
 
-[Full Screen](http://clusterfoo.com/wp-content/uploads/2012/11/dotfiles-06.png)
+[Full Screen](http://clusterfoo.com/wp-content/uploads/2013/01/Screenshot-from-2013-01-11-235146.png)
 
 
 Blog: <http://CLUSTERfoo.com>
@@ -35,9 +35,11 @@ My code on github: <https://github.com/CLUSTERfoo/>
                 :    Linux desktop entry for my xmonad setup.
 * `xmonad/`     :    Settings for Xmonad windows manager (Linux)   
 * `xmodmap`     :    Remap keyboard keys (linux)
+* `Sublime Text 2/` :
+                     Settings for Sublime.
 * `vimrc`       :    Settings for Vim. 
-* `iTerm/`      :    Settings folder for the iTerm2 terminal emulator on 
-OS X.
+* `iTerm/`      :    Settings folder for the iTerm2 terminal emulator on
+                     OS X.
 * `.git`        :    This is a git repo. Simply  use pull to upgrade to 
                      latest version (or push your own custom repo).
 * `setup.py`    :    Setup script. Not yet written. 
@@ -82,7 +84,9 @@ links of the dotfiles in this package to the home folder, for example:
     ln -s ~/DOTfiles/iTerm/ ~/.iTerm
     ln -s ~/DOTfiles/vimrc ~/.vimrc
 
-**Eceptions:** 
+#### Eceptions:
+
+The following files are *not* symlinked in the home directory: 
 
 * `xmonad-custom.desktop`: its symbolic link should go in 
 `/usr/share/xsessions` (at least in Ubuntu; your system may differ). 
@@ -110,22 +114,31 @@ I have switched from Bash to Zsh as my default shell. I highly recommend it!
 I'm using the [*oh-my-zsh*](https://github.com/robbyrussell/oh-my-zsh) Zsh 
 configuration framework.
 
-###Vim Plugins and Pathogen
+###Sublime Text Plugins
 
-I am using Vim as my editor and the [Pathogen](https://github.com/tpope/vim-pathogen) 
+I am using Sublime as my text editor. I use the Package Control plugin to manage
+plugins.
+
+Installed packages:
+
+* `SCSS`        :   SCSS syntax highlighting. 
+
+###Vim Plugins
+
+I use the [Pathogen](https://github.com/tpope/vim-pathogen) 
 plugin to manage my plugins. These are the plugins I'm currently using:
 
 * [Vim Powerline](https://github.com/Lokaltog/vim-powerline)
                 :    A better-looking, more functional vim statusline.
 * [NERDTree](https://github.com/scrooloose/nerdtree)
-                :    "The NERD tree allows you to explore your filesystem and to 
-                     open files and directories. It presents the filesystem to 
-                     you in the form of a tree which you manipulate with the 
-                     keyboard and/or mouse. It also allows you to perform simple 
-                     filesystem operations.
+                :   "The NERD tree allows you to explore your filesystem and  
+                    to open files and directories. It presents the filesystem to you in the form of a tree which you manipulate with the 
+                    keyboard and/or mouse. It also allows you to perform simple 
+                    filesystem operations."
 * [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
                 :    Indent Guides is a plugin for visually displaying indent 
                      levels in Vim. Can detect both tab and space indent styles.
+
 ###Other UNIX Tools:
 
 * `ack`         :    Kinda like grep. "`ack-grep`" in some Linux distros.
@@ -141,7 +154,7 @@ plugin to manage my plugins. These are the plugins I'm currently using:
 
 ###Custom Environment
 
-I am running a custom X environment that uses the following packages:
+I am running a customized desktop environment that uses the following packages:
 
 * [Xmonad](http://xmonad.org/)        
                 :     A tiling windows manager, built in Haskell, easy to customize
@@ -154,6 +167,7 @@ I am running a custom X environment that uses the following packages:
                 :     Graphical file managers / desktops. PCman is much nicer and 
                       lighter, but also started acting up for no reason so I'm 
                       back to Nautilus for the moment, which is pretty good too.
+
 ###Other Linux Tools
 
 * `git-cola`    :    Git GUI for visualizing tree.
