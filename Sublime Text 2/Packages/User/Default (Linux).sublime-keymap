@@ -1,8 +1,10 @@
 [
 
+
 /*******************************************************************************
 **  Movement
 *******************************************************************************/
+ 
 
 // Forward. (For exiting eclose brackets).
 {"keys": ["alt+space"],     "command": "move", 
@@ -16,18 +18,18 @@
 {"keys": ["alt+k"],     "command": "move", 
                         "args": {"by": "lines", "forward": false}},
 {"keys": ["alt+l"],     "command": "move", 
-                        "args": {"by": "characters", "forward": true}},
+                        "args": {"by": "characters", "forward": true}}, 
 
 
 
 /*******************************************************************************
-**   Deletions
+**   Deletions & Insertions
 *******************************************************************************/
 
 // left and right
-{"keys": ["shift+alt+h"],        "command": "left_delete"},
-{"keys": ["shift+alt+space"],    "command": "left_delete"},
-{"keys": ["shift+alt+l"],        "command": "right_delete"},
+{"keys": ["shift+alt+h"],       "command": "left_delete"},
+{"keys": ["alt+enter"],         "command": "left_delete"},
+{"keys": ["shift+alt+l"],       "command": "right_delete"},
 
 
 
@@ -40,7 +42,7 @@
                     "args": {"file": "Packages/User/ruby-end.sublime-macro"}},
 
 // Ruby <%= %> .erb tags. 
-{"keys": ["shift+alt+5"],   "command": "insert_snippet",
+{"keys": ["alt+5"],   "command": "insert_snippet",
                             "args": {"contents": "<%= $0 %>"}}
 
 ]

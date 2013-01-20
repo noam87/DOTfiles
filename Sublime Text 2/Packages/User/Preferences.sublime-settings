@@ -1,12 +1,10 @@
 {
+	"caret_style": "wide",
 	"color_scheme": "Packages/Color Scheme - Default/Sunburst.tmTheme",
+    "font_face": "DejaVu Sans Mono",
 	"font_size": 11,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
-	"rulers":
-	[
-		80
-	]
+	"ignored_packages": ["Vintage"],
+	"rulers": [80],
+	// Valid values are "smooth", "phase", "blink", "wide" and "solid".
+    "caret_style": "phase"
 }
