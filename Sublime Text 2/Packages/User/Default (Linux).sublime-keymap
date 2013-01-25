@@ -20,16 +20,36 @@
 {"keys": ["alt+l"],     "command": "move", 
                         "args": {"by": "characters", "forward": true}}, 
 
+// Scrolling
+{ "keys": ["ctrl+alt+k"],   "command": "scroll_lines", 
+                            "args": {"amount": 5.0 } },
+{ "keys": ["ctrl+alt+j"],   "command": "scroll_lines", 
+                            "args": {"amount": -5.0 } },
+
 
 
 /*******************************************************************************
-**   Deletions & Insertions
+**  Deletions & Insertions
 *******************************************************************************/
 
 // left and right
 {"keys": ["shift+alt+h"],       "command": "left_delete"},
-{"keys": ["alt+enter"],         "command": "left_delete"},
 {"keys": ["shift+alt+l"],       "command": "right_delete"},
+
+// new line
+{ "keys": ["alt+shift+space"],  "command": "insert", 
+                                "args": {"characters": "\n"} },
+{ "keys": ["ctrl+alt+shift+space"], 
+                "command": "run_macro_file", 
+                "args": {"file": "Packages/Default/Add Line.sublime-macro"} },
+
+
+
+/*******************************************************************************
+**  Misc   
+*******************************************************************************/
+
+{ "keys": ["ctrl+alt+0"], "command": "toggle_side_bar" },
 
 
 

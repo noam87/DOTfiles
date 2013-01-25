@@ -1,4 +1,3 @@
 clear Lock
 keysym Escape = Caps_Lock
-keysym Caps_Lock = Return
-keysym Return = Escape
+keysym Caps_Lock = Escape

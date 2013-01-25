@@ -16,10 +16,8 @@ call pathogen#infect()
     set ruler
     set hlsearch
     set wrap                " wrap if text is too long to display
-    set colorcolumn=80      " Make sure lines don't go over 80 columns.
     " set background=dark
-    " colorscheme jellybeans
-    colorscheme pablo
+    colorscheme jellybeans
 
     " Display <tab>s, etc.
     " --------------------------------------------------------------------------
@@ -69,7 +67,7 @@ call pathogen#infect()
 " ------------------------------------------------------------------------------
 
     set autoindent
-    set mouse=a
+    set mouse=
 
 
 
@@ -94,12 +92,11 @@ call pathogen#infect()
         map <CR> o<Esc>k        
 
     " Opening and closing braces
-    "
-    " EXAMPLE:
-    "   int main() <C-F>
-    " 
-    " RESULT:
-    "   int main() {
-    "       |    
-    "   }
-        imap <C-F> {<CR>}<Esc>O<Tab>
+    imap <C-F> {<CR>}<Esc>O<Tab>
+   
+   " do ... end
+    imap <C-E> <CR>end<Esc>O<Tab>
+
+    " iPad keyboards no have Esc. Remap to ctrl-space.
+    imap <C-Space> <Esc>
+
