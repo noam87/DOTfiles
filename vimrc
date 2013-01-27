@@ -80,10 +80,19 @@ call pathogen#infect()
 " ------------------------------------------------------------------------------
 
     " Insert newline in normal mode, above and below current line
-    map <CR> o<Esc>k        
+    nnoremap <CR> o<Esc>k        
 
     " Opening and closing braces
-    imap <C-F> {<CR>}<Esc>O<Tab>
+    inoremap {} {<CR>}<Esc>O<Tab>
 
     " do ... end
-    imap <C-E> <CR>end<Esc>O<Tab>
+    inoremap eee <CR>end<Esc>O<Tab>
+
+    " <%= >
+    inoremap <> <lt>%=<Space><Space>><Esc>hi
+
+    " Triads
+    inoremap hjk <CR>
+    inoremap fds <Esc>
+
+    inoremap <C-W><C-W> <Esc><C-W><C-W>
