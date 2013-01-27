@@ -18,32 +18,30 @@ My code on github: <https://github.com/CLUSTERfoo/>
 1. *In This Package*
 2. *Setup & Installation*
 3. *Upgrading and Backing Up*
-4. *UNIX Tools (Mac and Linux)*
-5. *Linux Tools*
-6. *Mac Tools*
-7. *Windows Tools*
-8. *License*
+4. *License*
 
 
 
-##In This Packge
+##Files in this Package
 
-* `zshrc`       :    Settings for Zsh (Z-shell).
-* `xmobarrc`    :    Xmobar settings.
-* `xsession`    :    Xsession executable.
+* `zshrc`       :   Settings for Zsh (Z-shell).
+* `xmobarrc`    :   Xmobar settings.
+* `xsession`    :   Xsession executable.
 * `xmonad-custom.desktop`   
-                :    Linux desktop entry for my xmonad setup.
-* `xmonad/`     :    Settings for Xmonad windows manager (Linux)   
-* `xmodmap`     :    Remap keyboard keys (linux)
+                :   Linux desktop entry for my xmonad setup.
+* `xmonad/`     :   Settings for Xmonad windows manager (Linux)   
+* `xmodmap`     :   Remap keyboard keys (linux)
 * `Sublime Text 2/` :
-                     Settings for Sublime.
-* `vimrc`       :    Settings for Vim. 
-* `iTerm/`      :    Settings folder for the iTerm2 terminal emulator on
-                     OS X.
-* `.git`        :    This is a git repo. Simply  use pull to upgrade to 
-                     latest version (or push your own custom repo).
-* `setup.py`    :    Setup script. Not yet written. 
-* `README.md`   :    You're looking at it.
+                    Settings for Sublime.
+* `vimrc`       :   Settings for Vim. 
+* `iTerm/`      :   Settings folder for the iTerm2 terminal emulator on
+                    OS X.
+* `.git`        :   This is a git repo. Simply  use pull to upgrade to 
+                    latest version (or push your own custom repo).
+* `setup.py`    :   Setup script. Not yet written. 
+* `README.md`   :   You're looking at it.
+* `packages.yaml`
+                :   packages I use.
 
 
 
@@ -84,7 +82,7 @@ links of the dotfiles in this package to the home folder, for example:
     ln -s ~/DOTfiles/iTerm/ ~/.iTerm
     ln -s ~/DOTfiles/vimrc ~/.vimrc
 
-#### Eceptions:
+#### Exceptions:
 
 The following files are *not* symlinked in the home directory: 
 
@@ -103,100 +101,6 @@ pull`. Note that this will override any custom changes you've made to the files.
 
 To back up your own version, create your own remote git repo and push
 all your changes.
-
-##UNIX tools (Mac and linux):
-
-A list of complimentary packages and plugins I'm using.
-
-###Zsh and Oh-My-Zsh
-
-I have switched from Bash to Zsh as my default shell. I highly recommend it! 
-I'm using the [*oh-my-zsh*](https://github.com/robbyrussell/oh-my-zsh) Zsh 
-configuration framework.
-
-###Sublime Text Plugins
-
-I am using Sublime as my text editor. I use the Package Control plugin to manage
-plugins.
-
-Installed packages:
-
-* `SCSS`        :   SCSS syntax highlighting. 
-
-###Vim Plugins
-
-I use the [Pathogen](https://github.com/tpope/vim-pathogen) 
-plugin to manage my plugins. These are the plugins I'm currently using:
-
-* [Vim Powerline](https://github.com/Lokaltog/vim-powerline)
-                :    A better-looking, more functional vim statusline.
-* [NERDTree](https://github.com/scrooloose/nerdtree)
-                :   "The NERD tree allows you to explore your filesystem and  
-                    to open files and directories. It presents the filesystem to you in the form of a tree which you manipulate with the 
-                    keyboard and/or mouse. It also allows you to perform simple 
-                    filesystem operations."
-* [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
-                :    Indent Guides is a plugin for visually displaying indent 
-                     levels in Vim. Can detect both tab and space indent styles.
-
-###Other UNIX Tools:
-
-* `ack`         :    Kinda like grep. "`ack-grep`" in some Linux distros.
-* `doxygen`     :    Turns code into documentation you can browse through.
-* `tmux`        :    Indispensable for a terminal-only environment. Create multiple
-                     terminal sessions inside a single terminal window or remote
-                     session.
-* `mc` ("Midnight Commander")
-                :    File manager / browser for your terminal.
-
-
-## Linux Tools
-
-###Custom Environment
-
-I am running a customized desktop environment that uses the following packages:
-
-* [Xmonad](http://xmonad.org/)        
-                :     A tiling windows manager, built in Haskell, easy to customize
-                      and extend (also in Haskell), and super light on resources. 
-                      YOU WANT THIS.
-* Xmobar        :     Light status bar (also Haskell-based). 
-* Trayer or StaloneTray
-                :     As a dock for icons. 
-* Nautilus or `pcmanfm`
-                :     Graphical file managers / desktops. PCman is much nicer and 
-                      lighter, but also started acting up for no reason so I'm 
-                      back to Nautilus for the moment, which is pretty good too.
-
-###Other Linux Tools
-
-* `git-cola`    :    Git GUI for visualizing tree.
-* ReText        :    Markdown editor with live preview.  
-* `arandr`      :    Quick GUI for `xrandr` (for working with multiple monitors).
-* `clipit`      :    Clipboard that remembers you copy-paste history. 
-                     Like Butler's clipboard function on Mac OS.
-* `xfce4-appfinder` 
-                :    App finder. Kinda sucky, but it's the only one I found.
-                     PCman had an app finding feature I miss. 
-* `meld`	     :    Diff / Merge GUI.
-
-## Mac OS Tools
-
-* Homebrew      :    I am using [Homebrew](http://mxcl.github.com/homebrew/), "The 
-                     missing package manager for OS X". It's awesome.
-* `macvim`      :    A GUI Vim editor for OS X.
-* KeyRemap4MacBook    
-                :    I use this to remap my CAPSLOCK to ESC and vice-versa.
-                     Your tendons will thank you if you're a Vim user.
-* DiffMerge     :    It diffs, it merges. That about it.
-* Source Tree   :    Git GUI for visualizing your merge tree.
-* Butler        :    Mostly use it for the clipboard function. 
-* Moom          :    Quickly move windows around with your keyboard.
-
-##Windows Tools
-
-* Internet Explorer.
-* Jim Beam and a sledgehammer.
 
 ##License
 

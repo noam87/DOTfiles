@@ -1,0 +1,50 @@
+---
+Command_Line:
+    Text:
+        - ack-grep
+        - vim
+    Utility:
+        - tmux
+        - git
+        - mc                        # Midnight Commander
+    System:
+        - tree
+        - pstree
+        - nmon                      # A system monitor
+    Environment:
+        - tmux                      # Screen multiplexer
+        - zsh                       # Z-shell
+        - oh-my-zsh                 # Zsh configuration framework
+
+Linux:
+    Text:
+        - ReText                    # Markdown
+        - meld                      # Diff/Merge
+        - Clipit
+    Utility:
+        - arandr
+        - dmenu
+        - git-cola
+        - xchat
+    Desktop_Environment:
+        - xmonad                    # Tiling Window Manager
+        - xmobar                    # text-based menu bar
+        - dmenu                     # Call up applications
+        - Trayer                    # A dock for icons
+
+OS_X: 
+    Text:
+        - DiffMerge
+    Utility:
+        - Moom
+        - Butler
+        - SourceTree
+    System:
+        - KeyRemap4MacBook
+        - Homebrew
+
+Vim_Plugins:
+    - pathogen                  # Manage vim plugins
+    - vim powerline
+    - NERDtree
+...

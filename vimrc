@@ -30,14 +30,6 @@ call pathogen#infect()
 " Indentation
 " ------------------------------------------------------------------------------
 
-    " Indent Guides Plugin
-    " --------------------------------------------------------------------------
-    autocmd VimEnter * IndentGuidesEnable
-    let g:indent_guides_guide_size=1
-    let g:indent_guides_start_level=2
-    autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=235
-    autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=236
-
     " Default
     " --------------------------------------------------------------------------
     set expandtab           " Turn tabs to spaces
@@ -88,15 +80,10 @@ call pathogen#infect()
 " ------------------------------------------------------------------------------
 
     " Insert newline in normal mode, above and below current line
-        map <S-Enter> O<Esc>j
-        map <CR> o<Esc>k        
+    map <CR> o<Esc>k        
 
     " Opening and closing braces
     imap <C-F> {<CR>}<Esc>O<Tab>
-   
-   " do ... end
+
+    " do ... end
     imap <C-E> <CR>end<Esc>O<Tab>
-
-    " iPad keyboards no have Esc. Remap to ctrl-space.
-    imap <C-Space> <Esc>
-
