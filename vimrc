@@ -17,6 +17,7 @@
   set ruler
   set hlsearch
   set wrap                " wrap if text is too long to display
+  set colorcolumn=80      " Make sure lines don't go over 80 columns
   " set background=dark
   colorscheme jellybeans
 
@@ -69,7 +70,9 @@
   inoremap fjf <Esc>
   
   " Change windows from insert mode
-  inoremap <C-W><C-W> <Esc><C-W><C-W>
+  inoremap <C-W>W <Esc><C-W><C-W>
+
+  inoremap <C-H> <Right>
 
 
 
@@ -78,13 +81,19 @@
 " -----------------------------------------------------------------------------
 
   " Opening and closing braces
-  inoremap {} {<CR>}<Esc>O<Tab>
+  inoremap {} {<Space><Space>}<Esc>hi
+  inoremap () ()<Esc>i
+  inoremap [] []<Esc>i
+  inoremap " ""<Esc>i
+  inoremap ' ''<Esc>i
 
   " do ... end
-  inoremap eee <CR>end<Esc>O<Tab>
+  inoremap <C-E> <CR>end<Esc>O<Tab>
 
   " <%= >
-  inoremap <> <lt>%=<Space><Space>><Esc>hi
+  inoremap <> <lt>%=<Space><Space>%><Esc>hhi
+  inoremap ><lt> <lt>><Esc>i
+  
 
 
 
@@ -113,4 +122,7 @@
   set laststatus=2        " Always show the statusline
   set encoding=utf-8      " Necessary to show unicode gylphs
 
+  " Call NERDtree
+  noremap <C-N> <Esc>:NERDTreeToggle<CR>
+  inoremap <C-N> <Esc>:NERDTreeToggle<CR>
 
