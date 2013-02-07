@@ -1,4 +1,4 @@
-" JANUARY 2013
+" FEBRUARY 2013
 " ------------------------------------------------------------------------------
 " ------------------------------------------------------------------------------
 
@@ -11,6 +11,7 @@
   syntax on
 
   set number
+  set scrolloff=10        " display at least 10 lines of context around cursor
   set list
   set showmatch
   set showmode
@@ -22,7 +23,6 @@
   colorscheme jellybeans
 
   " Display <tab>s, etc.
-  " --------------------------------------------------------------------------
   set nolist
   "set listchars=tab:>-,trail:.,nbsp:_,eol:$
 
@@ -76,24 +76,41 @@
 
 
 
-" -----------------------------------------------------------------------------
-" Insertion  Macros
-" -----------------------------------------------------------------------------
+" ------------------------------------------------------------------------------
+" Opening and cloising braces, etc.
+" ------------------------------------------------------------------------------
 
   " Opening and closing braces
   inoremap {} {<Space><Space>}<Esc>hi
+  inoremap }{ {<CR>}<Esc>O<Tab>
   inoremap () ()<Esc>i
   inoremap [] []<Esc>i
   inoremap " ""<Esc>i
   inoremap ' ''<Esc>i
-
-  " do ... end
-  inoremap <C-E> <CR>end<Esc>O<Tab>
-
-  " <%= >
-  inoremap <> <lt>%=<Space><Space>%><Esc>hhi
   inoremap ><lt> <lt>><Esc>i
-  
+  " ruby do ... end
+  inoremap <C-E> <CR>end<Esc>O<Tab>
+  " ruby erb opening and closing <%= >
+  inoremap <> <lt>%=<Space><Space>%><Esc>hhi
+
+
+
+" ------------------------------------------------------------------------------
+" Multipurpose Tab Key lifted from  Gary Bernhardt's vimrc:
+"
+" Tab key inserts tab if at beginning of line. Else do autocomplete.
+" (Use CTRL-I if tabs are necessary within text)
+" ------------------------------------------------------------------------------
+
+  function! InsertTabWrapper()
+    let col = col('.') - 1
+    if !col || getline('.')[col - 1] !~ '\k'
+      return "\<tab>"
+    else
+      return "\<c-p>"
+    endif
+  endfunction
+  inoremap <Tab> <c-r>=InsertTabWrapper()<CR>
 
 
 
