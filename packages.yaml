@@ -31,6 +31,10 @@ Linux:
         - xmobar                    # text-based menu bar
         - dmenu                     # Call up applications
         - Trayer                    # A dock for icons
+    Screencasting:
+        - recordmydesktop           # For recording your desktop
+        - gtk-recordmydesktop       # With GUI
+        - key-mon                   # Display key strokes
 
 OS_X: 
     Text:
