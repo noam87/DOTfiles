@@ -1,4 +1,4 @@
-#Noam's DOTfiles, Jan 2013
+#Noam's DOTfiles, Feb 2013
 
 This is my personal home directory and dev environment setup. I've put it 
 together mostly for personal use. 
@@ -91,6 +91,8 @@ The following files are *not* symlinked in the home directory:
 
 * `Sublime Text 2/Packages/User`: its symlink should go in the `Packages/User`
 directory of your Sublime installation. 
+
+* `jellybeans.vim`: its symlink goes in the vim color schemes directory.
 
 And you're done!
 

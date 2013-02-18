@@ -35,6 +35,10 @@ Linux:
         - recordmydesktop           # For recording your desktop
         - gtk-recordmydesktop       # With GUI
         - key-mon                   # Display key strokes
+        - pavucontrol               # PulseAudio monitor
+        - audacity                  # Audio editor
+        - openshot                  # Video editor
+        - vlc                       # I use it to extract audio from video
 
 OS_X: 
     Text:

@@ -44,6 +44,7 @@
     " Indentation
     autocmd Filetype make setlocal shiftwidth=8 softtabstop=8 tabstop=8 noexpandtab
     autocmd Filetype python setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
+    autocmd Filetype markdown setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     " Syntax
     autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
   endif
@@ -74,6 +75,8 @@
 
   inoremap <C-H> <Right>
 
+  " Rspec
+  nnoremap R :!rspec spec/
 
 
 " ------------------------------------------------------------------------------
