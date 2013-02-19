@@ -4,12 +4,11 @@ Command_Line:
         - ack-grep
         - vim
     Utility:
-        - tmux
-        - git
+        - git                       # git
         - mc                        # Midnight Commander
     System:
-        - tree
-        - pstree
+        - tree                      # Display filesystem tree
+        - pstree                    # Display process tree
         - nmon                      # A system monitor
     Environment:
         - tmux                      # Screen multiplexer
@@ -20,12 +19,14 @@ Linux:
     Text:
         - ReText                    # Markdown
         - meld                      # Diff/Merge
-        - Clipit
+        - Clipit                    # Retains history of your clipboard
     Utility:
-        - arandr
-        - dmenu
-        - git-cola
-        - xchat
+        - arandr                    # GUI for xrandr
+        - dmenu                     # Easily call up applications under Xmonad
+        - git-cola                  # git GUI
+        - xchat                     # IRC
+    System:
+        - baobab                    # Disk usage analyzer
     Desktop_Environment:
         - xmonad                    # Tiling Window Manager
         - xmobar                    # text-based menu bar
@@ -52,7 +53,7 @@ OS_X:
         - Homebrew
 
 Vim_Plugins:
-    - pathogen                  # Manage vim plugins
+    - pathogen                      # Manage vim plugins
     - vim powerline
     - NERDtree
 ...
