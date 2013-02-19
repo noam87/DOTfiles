@@ -1,6 +1,9 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
+# Vim is default editor
+export EDITOR=vim
+
 # For homebrew on Mac. fixes issue with order of path directories.
 # export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 
