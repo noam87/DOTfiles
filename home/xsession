@@ -3,7 +3,7 @@
 # xrdb -merge .Xresources; xrdb -merge .xdefaults
 
 # Load keboard remap if it doesn't load automatically
-# xmodmap .Xmodmap
+# xmodmap .xmodmap
 
 # trayer systray
 trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 10 --height 16 --transparent true --tint 0x000000 &
