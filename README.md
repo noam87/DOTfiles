@@ -13,42 +13,6 @@ Blog: <http://CLUSTERfoo.com>
 
 My code on github: <https://github.com/CLUSTERfoo/>
 
-##TOC
-
-1. *In This Package*
-2. *Setup & Installation*
-3. *Upgrading and Backing Up*
-4. *License*
-
-
-
-##Files in this Package
-
-* `zshrc`       :   Settings for Zsh (Z-shell).
-* `xmobarrc`    :   Xmobar settings.
-* `xsession`    :   Xsession executable.
-* `xmonad-custom.desktop`   
-                :   Linux desktop entry for my xmonad setup.
-* `xmonad/`     :   Settings for Xmonad windows manager (Linux)   
-* `xmodmap`     :   Remap keyboard keys (linux)
-* `Sublime Text 2/` :
-                    Settings for Sublime.
-* `vimrc`       :   Settings for Vim. 
-* `iTerm/`      :   Settings folder for the iTerm2 terminal emulator on
-                    OS X.
-* `.git`        :   This is a git repo. Simply  use pull to upgrade to 
-                    latest version (or push your own custom repo).
-* `setup.py`    :   Setup script. Not yet written. 
-* `README.md`   :   You're looking at it.
-* `packages.yaml`
-                :   packages I use.
-
-
-
-
-
-
-
 ##Setup & Installation
 
 ### 1 - Make Zsh Your Default Shell
@@ -77,24 +41,24 @@ your home folder.
 ###3 - Installation
 
 First, backup your old dotfiles. Next, create symbolic
-links of the dotfiles in this package to the home folder, for example:
+links to the dotfiles in this package. 
 
-    ln -s ~/DOTfiles/iTerm/ ~/.iTerm
-    ln -s ~/DOTfiles/vimrc ~/.vimrc
+All files in the `home/` directory are made to mirror the structure of 
+your actual `$HOME` directory, for example:
+
+    ln -s ~/DOTfiles/home/vimrc ~/.vimrc
+
+Creates a symlink in your home directory that points to the vimrc file.
 
 #### Exceptions:
 
-The following files are *not* symlinked in the home directory: 
+The following files should *not* be symlinked in the home directory: 
 
 * `xmonad-custom.desktop`: its symbolic link should go in 
 `/usr/share/xsessions` (at least in Ubuntu; your system may differ). 
 
 * `Sublime Text 2/Packages/User`: its symlink should go in the `Packages/User`
 directory of your Sublime installation. 
-
-* `jellybeans.vim`: its symlink goes in the vim color schemes directory.
-
-And you're done!
 
 ## Update and Backup
 
