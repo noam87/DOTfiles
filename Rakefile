@@ -1,11 +1,9 @@
 #                                                                              
-#               **NOTE:** THIS IS ALL REALLY HACKY.                              
+#              **NOTE:** TRYING OUT RAKE FEATURES. 
+#        
+#         THIS SCRIPT WAS A QUICK HACK AND IS INCOMPLETE.
 #
-#                 LOOK AWAY FOR THE LOVE OF GOD.
-#
-#                DO NOT USE ON YOUR OWN COMPUTER.
-#
-#              DO NOT READ OR YOUR EYES WILL BLEED.
+#             ** DO NOT USE ON YOUR OWN COMPUTER YET. **
 #                 
 
 
@@ -31,13 +29,6 @@ SYMLINKS  = FILES.pathmap("%{^~/DOTfiles/home,~}d/.%f")
 
 ######################### Tasks ################################################
 
-task :default do
-  puts "These are the files:"
-  puts FILES
-  puts "\n"
-  puts "And This is where they go:"
-  puts SYMLINKS
-end
 
 task :backup do
   backup_target = SYMLINKS.pathmap("%n%x")
