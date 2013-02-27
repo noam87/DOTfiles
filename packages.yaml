@@ -48,9 +48,13 @@ OS_X:
         - Moom
         - Butler
         - SourceTree
+        - iTerm
+        - SiteSucker
     System:
         - KeyRemap4MacBook
         - Homebrew
+        - ClamXav
+        - CleanApp
 
 Vim_Plugins:
     - pathogen                      # Manage vim plugins
