@@ -57,7 +57,7 @@
 
   set autoindent
   " Real men don't use mouse
-  set mouse=
+  set mouse=a
 
 
 
@@ -68,7 +68,7 @@
   " Insert newline in normal mode, above and below current line
   nnoremap <CR> o<Esc>k        
   " Esc while ssh'ing from iPad
-  inoremap fjf <Esc>
+  inoremap qq <Esc>
   
   " Change windows from insert mode
   inoremap <C-W>W <Esc><C-W><C-W>
@@ -89,7 +89,7 @@
   inoremap () ()<Esc>i
   inoremap [] []<Esc>i
   inoremap " ""<Esc>i
-  inoremap ' ''<Esc>i
+  inoremap '' ''<Esc>i
   inoremap ><lt> <lt>><Esc>i
   " ruby do ... end
   inoremap <C-E> <CR>end<Esc>O<Tab>
