@@ -1,18 +1,3 @@
-#                                                                              
-#              **NOTE:** TRYING OUT RAKE FEATURES. 
-#        
-#         THIS SCRIPT WAS A QUICK HACK AND IS INCOMPLETE.
-#
-#             ** DO NOT USE ON YOUR OWN COMPUTER YET. **
-#                 
-
-
-
-
-
-
-
-
 ########################## Generate List of dotfiles ###########################
 
 FILES     = FileList[
@@ -29,8 +14,10 @@ SYMLINKS  = FILES.pathmap("%{^~/DOTfiles/home,~}d/.%f")
 
 ######################### Tasks ################################################
 
+directory "~/DOTbackup"
+directory "~/.vim/colors"
 
-task :backup do
+task :backup => ["~/DOTbackup", "~/.vim/colors"] do
   backup_target = SYMLINKS.pathmap("%n%x")
   time = Time.now.strftime("%s")
   sh "mkdir ~/DOTbackup/#{time}"
@@ -40,7 +27,7 @@ task :backup do
   end
 end
 
-task :make_symlinks do 
+task :default => [:backup] do 
   FILES.zip(SYMLINKS).each do |source, symlink|
     sh "ln -s #{source} #{symlink}"
   end
