@@ -2,28 +2,30 @@
 
 FILES     = FileList[
                   'tmux.conf',
+                  'vim',
                   'vimrc',
                   'xmobarrc',
                   'Xmodmap',
                   'xmonad',
                   'xsession',
-                  'zshrc',
-
+                  'zshrc'
                 ].pathmap("~/DOTfiles/home/%f")
-SYMLINKS  = FILES.pathmap("%{^~/DOTfiles/home,~}d/.%f")
+SYMLINKS  = FILES.pathmap("%{~/DOTfiles/home,~}d/.%f")
 
 ######################### Tasks ################################################
+task :echo do
+  puts SYMLINKS
+end
 
-directory "~/DOTbackup"
-directory "~/.vim/colors"
-
-task :backup => ["~/DOTbackup", "~/.vim/colors"] do
+task :backup do
   backup_target = SYMLINKS.pathmap("%n%x")
   time = Time.now.strftime("%s")
-  sh "mkdir ~/DOTbackup/#{time}"
+  sh "mkdir -p ~/DOTbackup/#{time}"
 
   SYMLINKS.zip(backup_target).each do |symlink,target|
-    sh "mv #{symlink} ~/DOTbackup/#{time}/#{target}"
+    if File.exists?(File.expand_path "#{symlink}")
+      sh "mv #{symlink} ~/DOTbackup/#{time}/#{target}"
+    end
   end
 end
 
@@ -31,8 +33,5 @@ task :default => [:backup] do
   FILES.zip(SYMLINKS).each do |source, symlink|
     sh "ln -s #{source} #{symlink}"
   end
-
-  # TODO: special cases that don't fit the SYMLINKS pattern
-
 end
 
