@@ -5,43 +5,43 @@ together mostly for personal use.
 
 ![Xmonad desktop running Vim and git-cola](http://i.imgur.com/5nE0V.png?1)
 
-
-[Full Screen](http://clusterfoo.com/wp-content/uploads/2013/01/Screenshot-from-2013-01-11-235146.png)
-
-
 Blog: <http://CLUSTERfoo.com>
 
 My code on github: <https://github.com/CLUSTERfoo/>
 
 ##Setup & Installation
 
-### 1 - Make Zsh Your Default Shell
+### 1 - Make Zsh Your Default Shell and Install Oh-My-Zsh
 
-Zsh comes with most popular UNIX systems. To set it as your default shell,
-simply input the following command into your terminal:
+Instructions [here](https://github.com/robbyrussell/oh-my-zsh).
 
-    chsh -s /bin/zsh
+### 2 - Clone DOTfiles Repo
 
-The command to switch back to bash is simply:
+Clone this repo into your $HOME folder:
 
-    chsh -s /bin/bash
+    $ cd ~
+    $ git clone https://github.com/CLUSTERfoo/DOTfiles.git
 
+###3 - Install Home Directory Files
 
-### 2 - Clone DOTfiles Repo ##
+#### The easy way:  
 
-Clone this repo into your $HOME folder. In your terminal, type:
+Requires  Ruby and [rake](http://rake.rubyforge.org/). 
 
-    cd ~
-    git clone https://github.com/CLUSTERfoo/DOTfiles.git
+Simply `cd` into your `DOTfiles` directory and run:
 
-Alternatively, you can simply download the latest tagged zip file and dump it in
-your home folder.
+    $ rake 
 
+The script also backs up your old dotfiles in a `~/DOTbackup` directory. I've 
+only tested this script on one Ubuntu and one Mac... read the `Rakefile` before
+running it to make sure it doesn't interfere with your own setup (it's 
+pretty straight forward).
 
-###3 - Installation
+If you don't trust the installation script do a manual install:
 
-First, backup your old dotfiles. Next, create symbolic
-links to the dotfiles in this package. 
+#### The Manual Install:
+
+Create symbolic links to the dotfiles in this package. 
 
 All files in the `home/` directory are made to mirror the structure of 
 your actual `$HOME` directory, for example:
@@ -50,15 +50,15 @@ your actual `$HOME` directory, for example:
 
 Creates a symlink in your home directory that points to the vimrc file.
 
-#### Exceptions:
+#### Install Desktop Environment (Linux)
 
-The following files should *not* be symlinked in the home directory: 
+This is the location in Ubuntu. I don't know if
+other systems are the same. You might require sudo:
 
-* `xmonad-custom.desktop`: its symbolic link should go in 
-`/usr/share/xsessions` (at least in Ubuntu; your system may differ). 
+        $ sudo ln ~/DOTfiles/xmonad-custom.desktop /usr/share/xsessions/xmonad-custom.desktop
 
-* `Sublime Text 2/Packages/User`: its symlink should go in the `Packages/User`
-directory of your Sublime installation. 
+This will create a new Xmonad login session that you can choose from in the 
+Ubuntu login screen dropdown. 
 
 ## Update and Backup
 
