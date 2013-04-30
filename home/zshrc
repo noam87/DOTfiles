@@ -9,6 +9,7 @@ export EDITOR=vim
 
 #lampp
 alias lampp="sudo /opt/lampp/lampp"
+alias ack=ack-grep
 
 # set dual monitors
 dual () {
