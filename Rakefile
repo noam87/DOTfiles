@@ -8,7 +8,8 @@ FILES     = FileList[
                   'Xmodmap',
                   'xmonad',
                   'xsession',
-                  'zshrc'
+                  'zshrc',
+                  'gitconfig'
                 ].pathmap("~/DOTfiles/home/%f")
 SYMLINKS  = FILES.pathmap("%{~/DOTfiles/home,~}d/.%f")
 

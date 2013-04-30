@@ -1,0 +1,9 @@
+[user]
+	name = noam
+	email = clusterfoo@server.fake
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
+[diff]
+	tool = vimdiff
