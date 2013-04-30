@@ -5,6 +5,7 @@ Command_Line:
         - vim
     Utility:
         - git                       # git
+        - tig                       # text-based git GUI
         - mc                        # Midnight Commander
     System:
         - tree                      # Display filesystem tree

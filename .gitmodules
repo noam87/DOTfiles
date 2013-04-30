@@ -4,3 +4,9 @@
 [submodule "home/vim/bundle/powerline"]
 	path = home/vim/bundle/powerline
 	url = https://github.com/Lokaltog/vim-powerline.git
+[submodule "home/vim/bundle/fugitive"]
+	path = home/vim/bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "home/vim/bundle/obsession"]
+	path = home/vim/bundle/obsession
+	url = https://github.com/tpope/vim-obsession.git
