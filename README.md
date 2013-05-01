@@ -60,6 +60,16 @@ other systems are the same. You might require sudo:
 This will create a new Xmonad login session that you can choose from in the 
 Ubuntu login screen dropdown. 
 
+### 4 - Initialize Vim Plugins
+
+The vim plugins are setup as git submodules. To initialize them, `cd` into the
+`DOTfiles` directory and issue the following commands:
+
+    $ git submodule init
+    $ git submodule update
+
+
+
 ## Update and Backup
 
 Since this folder is a git repo, all you have to do to get updates is use `git
