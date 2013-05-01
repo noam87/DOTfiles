@@ -1,4 +1,4 @@
-#Noam's DOTfiles, Feb 2013
+#Noam's DOTfiles
 
 This is my personal home directory and dev environment setup. I've put it 
 together mostly for personal use. 
