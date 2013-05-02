@@ -16,3 +16,6 @@
 [submodule "home/vim/bundle/nerdcommenter"]
 	path = home/vim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "home/vim/bundle/align"]
+	path = home/vim/bundle/align
+	url = https://github.com/vim-scripts/Align.git
