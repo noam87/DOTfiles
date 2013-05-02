@@ -75,7 +75,13 @@
 
   " Move right (to jump out of brackets or quotes)
   inoremap <C-H> <Right>
-  inoremap jj <Right> <test>
+  inoremap jj <Right>
+
+  " FuzzyFind
+  nnoremap <C-F>l <Esc>:FufLine<Cr>
+  inoremap <C-F>l <Esc>:FufLine<Cr>
+  nnoremap <C-F>f <Esc>:FufFile<Cr>
+  inoremap <C-F>f <Esc>:FufFile<Cr>
 
   " Rspec
   nnoremap R :!rspec spec/
