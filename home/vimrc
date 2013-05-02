@@ -67,7 +67,15 @@
   " Change windows from insert mode
   inoremap <C-W>W <Esc><C-W><C-W>
 
+  " Easy window change
+  nnoremap <leader>w <C-W><up>
+  nnoremap <leader>s <C-W><down>
+  nnoremap <leader>a <C-W><left>
+  nnoremap <leader>d <C-W><right>
+
+  " Move right (to jump out of brackets or quotes)
   inoremap <C-H> <Right>
+  inoremap jj <Right> <test>
 
   " Rspec
   nnoremap R :!rspec spec/
