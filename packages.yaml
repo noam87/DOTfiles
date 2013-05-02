@@ -59,6 +59,11 @@ OS_X:
 
 Vim_Plugins:
     - pathogen                      # Manage vim plugins
-    - vim powerline
-    - NERDtree
+    - vim powerline                 
+    - NERDtree                      # Browse directory tree
+    - Align                         # Easily align multiple elements
+    - FuzzyFinder                   # Fuzzy search in Vim
+    - MiniBufExpl                   # Explore active and inactive buffers
+    - NerdCommenter                 # Comment and uncomment multiple lines
+    - Obsession                     # Autosave current session
 ...
