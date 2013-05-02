@@ -10,3 +10,6 @@
 [submodule "home/vim/bundle/obsession"]
 	path = home/vim/bundle/obsession
 	url = https://github.com/tpope/vim-obsession.git
+[submodule "home/vim/bundle/minibufexpl"]
+	path = home/vim/bundle/minibufexpl
+	url = https://github.com/fholgado/minibufexpl.vim.git
