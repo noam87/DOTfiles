@@ -68,6 +68,9 @@ The vim plugins are setup as git submodules. To initialize them, `cd` into the
     $ git submodule init
     $ git submodule update
 
+To update all vim plugins:
+
+    $ git submodule foreach git pull origin master
 
 
 ## Update and Backup
