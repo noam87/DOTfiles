@@ -32,7 +32,7 @@ Linux:
     Desktop_Environment:
         - xmonad                    # Tiling Window Manager
         - xmobar                    # text-based menu bar
-        - dmenu                     # Call up applications
+        - dmenu (suckless-tools)    # Call up applications
         - Trayer                    # A dock for icons
     Screencasting:
         - recordmydesktop           # For recording your desktop
