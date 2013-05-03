@@ -28,6 +28,7 @@ Linux:
         - xchat                     # IRC
     System:
         - baobab                    # Disk usage analyzer
+        - psensor                   # Temperature indicator
     Desktop_Environment:
         - xmonad                    # Tiling Window Manager
         - xmobar                    # text-based menu bar
