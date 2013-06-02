@@ -154,3 +154,5 @@
   noremap <C-N> <Esc>:NERDTreeToggle<CR>
   inoremap <C-N> <Esc>:NERDTreeToggle<CR>
 
+  " Filetype plugin for NERDCommenter
+  filetype plugin on
