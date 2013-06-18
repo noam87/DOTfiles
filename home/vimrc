@@ -38,6 +38,7 @@
     " Indentation
     autocmd Filetype make setlocal shiftwidth=8 softtabstop=8 tabstop=8 noexpandtab
     autocmd Filetype python setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
+    autocmd Filetype javascript setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     autocmd Filetype markdown setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     " Syntax
     autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
@@ -95,6 +96,8 @@
   inoremap {} {<Space><Space>}<Esc>hi
   inoremap }{ {<CR>}<Esc>O<Tab>
   inoremap () ()<Esc>i
+  inoremap )( (<Esc>O<Tab>
+  inoremap (( (<Space><Space>)<Esc>hi
   inoremap [] []<Esc>i
   inoremap " ""<Esc>i
   inoremap '' ''<Esc>i
