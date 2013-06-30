@@ -32,6 +32,7 @@ Linux_Only:
         - baobab                    # Disk usage analyzer
         - psensor                   # Temperature indicator
     Desktop_Environment:
+        - i3                        # Better than Xmonad
         - xmonad                    # Tiling Window Manager
         - xmobar                    # text-based menu bar
         - dmenu (suckless-tools)    # Call up applications
