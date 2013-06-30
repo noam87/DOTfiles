@@ -18,4 +18,6 @@ clipit &
 
 dropbox start &
 
+nm-applet &
+
 exec xmonad

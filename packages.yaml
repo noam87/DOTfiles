@@ -16,7 +16,7 @@ Command_Line:
         - zsh                       # Z-shell
         - oh-my-zsh                 # Zsh configuration framework
 
-Linux:
+Linux_Only:
     Text:
         - ReText                    # Markdown
         - meld                      # Diff/Merge
@@ -26,6 +26,8 @@ Linux:
         - dmenu                     # Easily call up applications under Xmonad
         - git-cola                  # git GUI
         - xchat                     # IRC
+        - build-essential           # make, g++, and all that jazz
+        - virtualbox                
     System:
         - baobab                    # Disk usage analyzer
         - psensor                   # Temperature indicator

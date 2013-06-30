@@ -96,8 +96,7 @@
   inoremap {} {<Space><Space>}<Esc>hi
   inoremap }{ {<CR>}<Esc>O<Tab>
   inoremap () ()<Esc>i
-  inoremap )( (<Esc>O<Tab>
-  inoremap (( (<Space><Space>)<Esc>hi
+  inoremap )( (<Space><Space>)<Esc>hi
   inoremap [] []<Esc>i
   inoremap " ""<Esc>i
   inoremap '' ''<Esc>i
