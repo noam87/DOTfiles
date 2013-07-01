@@ -33,6 +33,7 @@ Linux_Only:
         - psensor                   # Temperature indicator
     Desktop_Environment:
         - i3                        # Better than Xmonad
+        - ranger                    # File manager with vim key bindings
         - xmonad                    # Tiling Window Manager
         - xmobar                    # text-based menu bar
         - dmenu (suckless-tools)    # Call up applications

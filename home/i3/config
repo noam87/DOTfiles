@@ -15,6 +15,10 @@ exec dropbox start
 exec nm-applet
 exec gnome-sound-applet
 
+# to get rid of annoyind 'Desktop' window on nautilus launch
+# run following command
+# gsettings set org.gnome.desktop.background show-desktop-icons false
+
 set $mod Mod4
 
 # font for window titles. ISO 10646 = Unicode
