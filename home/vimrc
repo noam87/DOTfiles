@@ -98,6 +98,7 @@
   inoremap () ()<Esc>i
   inoremap )( (<Space><Space>)<Esc>hi
   inoremap [] []<Esc>i
+  inoremap <bar><bar> <bar><bar><Esc>i
   inoremap " ""<Esc>i
   inoremap '' ''<Esc>i
   inoremap ><lt> <lt>><Esc>i
