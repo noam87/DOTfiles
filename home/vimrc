@@ -61,8 +61,6 @@
 " Key Maps
 " ------------------------------------------------------------------------------
 
-  " Insert newline in normal mode, above and below current line
-  nnoremap <CR> o<Esc>k        
   " Esc while ssh'ing from iPad
   inoremap qq <Esc>
   
@@ -79,14 +77,12 @@
   inoremap <C-H> <Right>
   inoremap jj <Right>
 
-  " FuzzyFind
-  nnoremap <C-F>l <Esc>:FufLine<Cr>
-  inoremap <C-F>l <Esc>:FufLine<Cr>
-  nnoremap <C-F>f <Esc>:FufFile<Cr>
-  inoremap <C-F>f <Esc>:FufFile<Cr>
-
   " Rspec
   nnoremap R :!rspec spec/
+
+  " search files. :cw to view list of matches.
+  nnoremap <C-F>a <Esc>:vimgrep<Space>
+  inoremap <C-F>a <Esc>:vimgrep<Space>
 
 
 " ------------------------------------------------------------------------------
@@ -160,3 +156,10 @@
 
   " Filetype plugin for NERDCommenter
   filetype plugin on
+
+  " FuzzyFind
+  nnoremap <C-F>l <Esc>:FufLine<Cr>
+  inoremap <C-F>l <Esc>:FufLine<Cr>
+  nnoremap <C-F>f <Esc>:FufFile<Cr>
+  inoremap <C-F>f <Esc>:FufFile<Cr>
+
