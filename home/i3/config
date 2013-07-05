@@ -14,6 +14,8 @@ exec clipit
 exec dropbox start
 exec nm-applet
 exec gnome-sound-applet
+# set background color
+exec --no-startup-id xsetroot -solid "#000"
 
 # to get rid of annoyind 'Desktop' window on nautilus launch
 # run following command
