@@ -68,10 +68,15 @@
   inoremap <C-W>W <Esc><C-W><C-W>
 
   " Easy window change
-  nnoremap <leader>w <C-W><up>
-  nnoremap <leader>s <C-W><down>
-  nnoremap <leader>a <C-W><left>
-  nnoremap <leader>d <C-W><right>
+  nnoremap <C-H> <C-W><left>
+  nnoremap <C-J> <C-W><down>
+  nnoremap <C-K> <C-W><up>
+  nnoremap <C-L> <C-W><right> 
+  inoremap <C-H> <C-W><left>
+  inoremap <C-J> <C-W><down>
+  inoremap <C-K> <C-W><up>
+  inoremap <C-L> <C-W><right>
+
 
   " Move right (to jump out of brackets or quotes)
   inoremap <C-H> <Right>
