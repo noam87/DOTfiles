@@ -165,6 +165,6 @@
   " FuzzyFind
   nnoremap <C-F>l <Esc>:FufLine<Cr>
   inoremap <C-F>l <Esc>:FufLine<Cr>
-  nnoremap <C-F>f <Esc>:FufFile<Cr>
-  inoremap <C-F>f <Esc>:FufFile<Cr>
+  nnoremap <C-F>f <Esc>:FufCoverageFile<Cr>
+  inoremap <C-F>f <Esc>:FufCoverageFile<Cr>
 
