@@ -3,7 +3,8 @@
 This is my personal home directory and dev environment setup. I've put it 
 together mostly for personal use. 
 
-![Xmonad desktop running Vim and git-cola](http://i.imgur.com/5nE0V.png?1)
+![i3 desktop](http://i.imgur.com/E9CenEg.png?1)
+[Large](http://i.imgur.com/E9CenEg.png)
 
 Blog: <http://CLUSTERfoo.com>
 
@@ -50,17 +51,8 @@ your actual `$HOME` directory, for example:
 
 Creates a symlink in your home directory that points to the vimrc file.
 
-#### Install Desktop Environment (Linux)
 
-This is the location in Ubuntu. I don't know if
-other systems are the same. You might require sudo:
-
-        $ sudo ln ~/DOTfiles/xmonad-custom.desktop /usr/share/xsessions/xmonad-custom.desktop
-
-This will create a new Xmonad login session that you can choose from in the 
-Ubuntu login screen dropdown. 
-
-### 4 - Initialize Vim Plugins
+### 4 - Initialize Vim Plugin Submodules
 
 The vim plugins are setup as git submodules. To initialize them, `cd` into the
 `DOTfiles` directory and issue the following commands:
@@ -75,12 +67,13 @@ To update all vim plugins:
 
 ## Update and Backup
 
-Since this folder is a git repo, all you have to do to get updates is use `git
-pull`. Note that this will override any custom changes you've made to the files.
+Since this folder is a git repo, all you have to do to get updates is:
 
+    $ git pull origin master
+    $ git submodule update
+    
+Note that this will override any custom changes you've made to the files.
 To back up your own version, create your own remote git repo and push
-all your changes.
+all your changes. Submodules can be updated straight from their origin using:
 
-##License
-
-*Lives Are At Stake!* License 2.0
+    $ git submodule foreach pull origin master
