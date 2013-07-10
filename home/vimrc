@@ -15,6 +15,8 @@
   set colorcolumn=80      " Make sure lines don't go over 80 columns
   " set background=dark
   colorscheme jellybeans
+  " resize current window to 85 lines
+  let &winwidth = 85
 
   " Display <tab>s, etc.
   set nolist
@@ -54,6 +56,13 @@
   set autoindent
   " Real men don't use mouse
   set mouse=a
+  " set paste and nopaste modes
+  inoremap <C-P>y <Esc>:set paste<Cr>i
+  nnoremap <C-P>y <Esc>:set paste<Cr>i 
+  inoremap <C-P>n <Esc>:set nopaste<Cr>
+  nnoremap <C-P>n <Esc>:set nopaste<Cr>
+
+
 
 
 
@@ -79,15 +88,15 @@
 
 
   " Move right (to jump out of brackets or quotes)
-  inoremap <C-H> <Right>
-  inoremap jj <Right>
-
-  " Rspec
-  nnoremap R :!rspec spec/
+  inoremap <C-@> <Right>
+  "inoremap jj <Right>
 
   " search files. :cw to view list of matches.
   nnoremap <C-F>a <Esc>:vimgrep<Space>
   inoremap <C-F>a <Esc>:vimgrep<Space>
+  nnoremap <C-F>r <Esc>:%s//gc<Left><Left><Left>
+  inoremap <C-F>r <Esc>:%s//gc<Left><Left><Left>
+
 
 
 " ------------------------------------------------------------------------------
@@ -96,18 +105,19 @@
 
   " Opening and closing braces
   inoremap {} {<Space><Space>}<Esc>hi
-  inoremap }{ {<CR>}<Esc>O<Tab>
+  inoremap }{ <Esc>$a<Space>{<CR>}<Esc>O<Tab>
   inoremap () ()<Esc>i
   inoremap )( (<Space><Space>)<Esc>hi
   inoremap [] []<Esc>i
   inoremap <bar><bar> <bar><bar><Esc>i
   inoremap " ""<Esc>i
   inoremap '' ''<Esc>i
-  inoremap ><lt> <lt>><Esc>i
+  inoremap <> <lt>><Esc>i
+  inoremap ;; <Esc>$a;
   " ruby do ... end
   inoremap <C-E> <CR>end<Esc>O<Tab>
   " ruby erb opening and closing <%= >
-  inoremap <> <lt>%=<Space><Space>%><Esc>hhi
+  inoremap ><lt> <lt>%=<Space><Space>%><Esc>hhi
 
 
 
