@@ -71,7 +71,7 @@
 " ------------------------------------------------------------------------------
 
   " Esc while ssh'ing from iPad
-  inoremap qq <Esc>
+  " inoremap qq <Esc>
   
   " Change windows from insert mode
   inoremap <C-W>W <Esc><C-W><C-W>
@@ -93,9 +93,7 @@
 
   " search files. :cw to view list of matches.
   nnoremap <C-F>a <Esc>:vimgrep<Space>
-  inoremap <C-F>a <Esc>:vimgrep<Space>
   nnoremap <C-F>r <Esc>:%s//gc<Left><Left><Left>
-  inoremap <C-F>r <Esc>:%s//gc<Left><Left><Left>
 
 
 
@@ -174,7 +172,6 @@
 
   " FuzzyFind
   nnoremap <C-F>l <Esc>:FufLine<Cr>
-  inoremap <C-F>l <Esc>:FufLine<Cr>
   nnoremap <C-F>f <Esc>:FufCoverageFile<Cr>
-  inoremap <C-F>f <Esc>:FufCoverageFile<Cr>
+  nnoremap <C-F>c <Esc>:FufRenewCache<Cr>
 
