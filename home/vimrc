@@ -158,11 +158,8 @@
 " Plugins Stuff
 " ------------------------------------------------------------------------------
 
-  " Pathogen plugin
-  call pathogen#infect()
-
   " Powerline
-  set nocompatible
+  set nocompatible        " NOTE: vundle also needs this
   set t_Co=256            " Tell Vim that terminal supports 256 colors
   set laststatus=2        " Always show the statusline
   set encoding=utf-8      " Necessary to show unicode gylphs
@@ -174,8 +171,20 @@
   " Filetype plugin for NERDCommenter
   filetype plugin on
 
-  " FuzzyFind
-  nnoremap <C-F>l <Esc>:FufLine<Cr>
-  nnoremap <C-F>f <Esc>:FufCoverageFile<Cr>
-  nnoremap <C-F>c <Esc>:FufRenewCache<Cr>
+  " CtrlP
+  nnoremap <C-F>f <Esc>:CtrlP<Cr>
+
+" Vundle
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+filetype plugin indent on
+
+Bundle 'gmarik/vundle'
+Bundle 'scrooloose/nerdtree'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'fholgado/minibufexpl.vim'
+Bundle 'kien/ctrlp.vim'
+
+
 
