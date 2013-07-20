@@ -81,15 +81,18 @@
   nnoremap <C-J> <C-W><down>
   nnoremap <C-K> <C-W><up>
   nnoremap <C-L> <C-W><right> 
-  inoremap <C-H> <C-W><left>
-  inoremap <C-J> <C-W><down>
-  inoremap <C-K> <C-W><up>
-  inoremap <C-L> <C-W><right>
-
+  nnoremap tt <Esc>:tabnew<Cr>
+  nnoremap J <Esc>gT
+  nnoremap K <Esc>gt
+  " Easy split
+  nnoremap <leader>v <Esc>:vsplit<Cr>
+  nnoremap <leader>s <Esc>:split<Cr>
 
   " Move right (to jump out of brackets or quotes)
   inoremap <C-@> <Right>
-  "inoremap jj <Right>
+
+  " EOL
+  inoremap <C-l> <Esc>$a
 
   " search files. :cw to view list of matches.
   nnoremap <C-F>a <Esc>:vimgrep<Space>
@@ -103,7 +106,8 @@
 
   " Opening and closing braces
   inoremap {} {<Space><Space>}<Esc>hi
-  inoremap }{ <Esc>$a<Space>{<CR>}<Esc>O<Tab>
+  inoremap }{ {<CR>}<Esc>O<Tab>
+  inoremap }} <Esc>$a<Space>{<CR>}<Esc>O<Tab>
   inoremap () ()<Esc>i
   inoremap )( (<Space><Space>)<Esc>hi
   inoremap [] []<Esc>i
