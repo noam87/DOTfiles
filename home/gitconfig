@@ -9,3 +9,7 @@
 	tool = vimdiff
 [color]
 	ui = true
+[alias]
+  s = status
+  a = add --all
+  c = commit

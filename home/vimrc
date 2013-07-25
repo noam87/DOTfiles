@@ -11,10 +11,10 @@
   set showmode
   set ruler
   set hlsearch
-  set wrap                " wrap if text is too long to display
+  set nowrap                " wrap if text is too long to display
   set colorcolumn=80      " Make sure lines don't go over 80 columns
   " set background=dark
-  ""colorscheme jellybeans
+  colorscheme mellow
   " resize current window to 85 lines
   let &winwidth = 85
 
@@ -43,8 +43,9 @@
     autocmd Filetype javascript setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     autocmd Filetype markdown setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     autocmd Filetype c setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
+    autocmd Filetype xml setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     " Syntax
-    autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
+    autocmd BufNewFile,BufRead *.erb,*.html,*.rss,*.atom setfiletype xml
   endif
 
 
@@ -90,6 +91,7 @@
 
   " Move right (to jump out of brackets or quotes)
   inoremap <C-@> <Right>
+  inoremap <C-Space> <Right>
 
   " EOL
   inoremap <C-l> <Esc>$a
@@ -117,7 +119,7 @@
   inoremap <> <lt>><Esc>i
   inoremap ;; <Esc>$a;
   " ruby do ... end
-  inoremap <C-E> <CR>end<Esc>O<Tab>
+  inoremap <C-E> <Esc>$a<Space>do<CR>end<Esc>O<Tab>
   " ruby erb opening and closing <%= >
   inoremap ><lt> <lt>%=<Space><Space>%><Esc>hhi
 
@@ -181,15 +183,16 @@
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-filetype plugin indent on
+"filetype plugin indent on
+filetype plugin on
 
 Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/vim-powerline'
-Bundle 'fholgado/minibufexpl.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'vim-scripts/ScrollColors'
 Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'https://github.com/tpope/vim-surround.git'
 
 
 

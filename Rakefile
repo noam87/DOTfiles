@@ -4,13 +4,11 @@ FILES     = FileList[
                   'tmux.conf',
                   'vim',
                   'vimrc',
-                  'xmobarrc',
                   'Xmodmap',
-                  'xmonad',
-                  'xsession',
                   'zshrc',
                   'gitconfig',
-                  'i3'
+                  'i3',
+                  'scripts'
                 ].pathmap("~/DOTfiles/home/%f")
 SYMLINKS  = FILES.pathmap("%{~/DOTfiles/home,~}d/.%f")
 

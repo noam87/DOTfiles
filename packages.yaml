@@ -31,6 +31,7 @@ Linux_Only:
     System:
         - baobab                    # Disk usage analyzer
         - psensor                   # Temperature indicator
+        - acpi                      # display battery levels
     Desktop_Environment:
         - i3                        # Better than Xmonad
         - ranger                    # File manager with vim key bindings
