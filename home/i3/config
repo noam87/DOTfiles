@@ -40,6 +40,7 @@ bindsym $mod+w kill
 
 # lock screen
 bindsym $mod+Shift+C exec i3lock
+bindsym $mod+Shift+Z exec i3lock; sudo pm-hibernate
 
 # start dmenu (a program launcher)
 bindsym $mod+p exec dmenu_run
