@@ -4,6 +4,7 @@
 
   syntax on
 
+  set t_Co=256
   set number
   set scrolloff=10        " display at least 10 lines of context around cursor
   set list
@@ -42,6 +43,7 @@
     " Indentation
     autocmd Filetype make setlocal shiftwidth=8 softtabstop=8 tabstop=8 noexpandtab
     autocmd Filetype python setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
+    autocmd Filetype sql setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     autocmd Filetype javascript setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     autocmd Filetype markdown setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     autocmd Filetype c setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
@@ -122,9 +124,9 @@
   inoremap ;; <Esc>$a;
   " ruby do ... end
   inoremap <C-E> <Esc>$a<Space>do<CR>end<Esc>O<Tab>
+  inoremap <C-\> <Esc>$a<Space>do<Space><CR>end<Esc>k$i
   " ruby erb opening and closing <%= >
   inoremap ><lt> <lt>%=<Space><Space>%><Esc>hhi
-
 
 
 " ------------------------------------------------------------------------------
@@ -195,6 +197,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'vim-scripts/ScrollColors'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'https://github.com/tpope/vim-surround.git'
+Bundle 'https://github.com/godlygeek/csapprox'
 
 
 
