@@ -2,7 +2,7 @@
 " Display
 " ------------------------------------------------------------------------------
 
-  syntax on
+  syntax enable
 
   set t_Co=256
   set number
@@ -15,11 +15,11 @@
   set nowrap                " wrap if text is too long to display
   set colorcolumn=80      " Make sure lines don't go over 80 columns
   " set background=dark
-  colorscheme +summerfruit
+  colorscheme +twilight_dark
   " resize current window to 85 lines
   let &winwidth = 85
   highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-  match OverLength /\%91v.\+/
+  "match OverLength /\%91v.\+/
 
   " Display <tab>s, etc.
   set nolist
@@ -48,8 +48,14 @@
     autocmd Filetype markdown setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     autocmd Filetype c setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     autocmd Filetype xml setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
+    autocmd Filetype html setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     " Syntax
-    autocmd BufNewFile,BufRead *.erb,*.html,*.rss,*.atom setfiletype xml
+    autocmd BufNewFile,BufRead *.scss.erb setfiletype scss 
+    autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
+    autocmd BufNewFile,BufRead *.erb,*.html setfiletype html
+    autocmd BufNewFile,BufRead *.rabl setfiletype ruby
+    autocmd BufNewFile,BufRead *.coffee setfiletype coffee
+    autocmd BufNewFile,BufRead *.rs setfiletype rust
   endif
 
 
@@ -61,13 +67,6 @@
   set autoindent
   " Real men don't use mouse
   set mouse=a
-  " set paste and nopaste modes
-  inoremap <C-P>y <Esc>:set paste<Cr>i
-  nnoremap <C-P>y <Esc>:set paste<Cr>i 
-  inoremap <C-P>n <Esc>:set nopaste<Cr>
-  nnoremap <C-P>n <Esc>:set nopaste<Cr>
-
-
 
 
 
@@ -100,6 +99,9 @@
   " EOL
   inoremap <C-l> <Esc>$a
 
+  "Enter
+  inoremap <C-X> <Cr>
+
   " search files. :cw to view list of matches.
   nnoremap <C-F>a <Esc>:vimgrep<Space>
   nnoremap <C-F>r <Esc>:%s//gc<Left><Left><Left>
@@ -112,19 +114,20 @@
 
   " Opening and closing braces
   inoremap {} {<Space><Space>}<Esc>hi
-  inoremap }{ {<CR>}<Esc>O<Tab>
-  inoremap }} <Esc>$a<Space>{<CR>}<Esc>O<Tab>
+  inoremap }{ <Esc>$a<Space>{<CR>}<Esc>O<Tab>
   inoremap () ()<Esc>i
-  inoremap )( (<Space><Space>)<Esc>hi
+  inoremap )( <Esc>$a<Space>(<CR>)<Esc>O<Tab>
   inoremap [] []<Esc>i
-  inoremap <bar><bar> <bar><bar><Esc>i
+  inoremap <Bar><Bar> <Bar><Bar><Esc>i
   inoremap " ""<Esc>i
   inoremap '' ''<Esc>i
   inoremap <> <lt>><Esc>i
   inoremap ;; <Esc>$a;
+  " arrows
+  inoremap >> ->
   " ruby do ... end
-  inoremap <C-E> <Esc>$a<Space>do<CR>end<Esc>O<Tab>
-  inoremap <C-\> <Esc>$a<Space>do<Space><CR>end<Esc>k$i
+  inoremap <C-E> <Esc>oend<Esc>O<Tab>
+  inoremap <C-\> <Esc>$a<Space>do<Space><Bar><Bar><CR>end<Esc>k$i
   " ruby erb opening and closing <%= >
   inoremap ><lt> <lt>%=<Space><Space>%><Esc>hhi
 
@@ -182,6 +185,10 @@
 
   " Indent guides
   "let g:indent_guides_enable_on_vim_startup = 1
+
+  " MiniBufExpl
+  let g:miniBufExplorerAutoStart = 0
+  noremap <C-B> <Esc>:MBEFocus<Enter>
   
 " Vundle
 filetype off
@@ -198,6 +205,6 @@ Bundle 'vim-scripts/ScrollColors'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'https://github.com/tpope/vim-surround.git'
 Bundle 'https://github.com/godlygeek/csapprox'
-
-
-
+Bundle "https://github.com/kchmck/vim-coffee-script.git"
+Bundle "fholgado/minibufexpl.vim"
+Bundle 'wting/rust.vim'
