@@ -54,7 +54,7 @@ exe 'hi Underlined     guifg='.s:white             .' guibg='.s:darkgrey        
 exe 'hi NonText        guifg='.s:lightgrey         .' guibg='.s:grey
 exe 'hi SpecialKey     guifg='.s:grey              .' guibg='.s:darkgrey
 
-exe 'hi LineNr         guifg='.s:mid_grey_blue     .' guibg='.s:dark_grey_blue  .' gui=none'
+exe 'hi LineNr         guifg=#ffffff               guibg='.s:dark_grey_blue  .' gui=none'
 exe 'hi StatusLine     guifg='.s:white             .' guibg='.s:grey            .' gui=italic,underline'
 exe 'hi StatusLineNC   guifg='.s:lightgrey         .' guibg='.s:grey            .' gui=italic,underline'
 exe 'hi VertSplit      guifg='.s:grey              .' guibg='.s:grey            .' gui=none'
