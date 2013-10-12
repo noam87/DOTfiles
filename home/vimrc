@@ -43,6 +43,7 @@
     " Indentation
     autocmd Filetype make setlocal shiftwidth=8 softtabstop=8 tabstop=8 noexpandtab
     autocmd Filetype python setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
+    autocmd Filetype asm setlocal shiftwidth=8 softtabstop=8 tabstop=8 expandtab
     autocmd Filetype sql setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     autocmd Filetype javascript setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     autocmd Filetype markdown setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
@@ -51,6 +52,7 @@
     autocmd Filetype html setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     " Syntax
     autocmd BufNewFile,BufRead *.scss.erb setfiletype scss 
+    autocmd BufNewFile,BufRead *.asm setfiletype nasm 
     autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
     autocmd BufNewFile,BufRead *.erb,*.html setfiletype html
     autocmd BufNewFile,BufRead *.rabl setfiletype ruby
