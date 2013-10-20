@@ -40,24 +40,26 @@
 
   " By Filetype
   if has ("autocmd")
+    " Syntax
+    autocmd BufNewFile,BufRead *.scss.erb setfiletype scss 
+    autocmd BufNewFile,BufRead *.asm setfiletype nasm 
+    autocmd BufNewFile,BufRead *.s setfiletype armasm 
+    autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
+    autocmd BufNewFile,BufRead *.erb,*.html setfiletype html
+    autocmd BufNewFile,BufRead *.rabl setfiletype ruby
+    autocmd BufNewFile,BufRead *.coffee setfiletype coffee
+    autocmd BufNewFile,BufRead *.rs setfiletype rust
     " Indentation
     autocmd Filetype make setlocal shiftwidth=8 softtabstop=8 tabstop=8 noexpandtab
     autocmd Filetype python setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
-    autocmd Filetype asm setlocal shiftwidth=8 softtabstop=8 tabstop=8 expandtab
+    autocmd Filetype nasm setlocal shiftwidth=8 softtabstop=8 tabstop=8 expandtab
+    autocmd Filetype armasm setlocal shiftwidth=8 softtabstop=8 tabstop=8 expandtab
     autocmd Filetype sql setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     autocmd Filetype javascript setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     autocmd Filetype markdown setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     autocmd Filetype c setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     autocmd Filetype xml setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     autocmd Filetype html setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
-    " Syntax
-    autocmd BufNewFile,BufRead *.scss.erb setfiletype scss 
-    autocmd BufNewFile,BufRead *.asm setfiletype nasm 
-    autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
-    autocmd BufNewFile,BufRead *.erb,*.html setfiletype html
-    autocmd BufNewFile,BufRead *.rabl setfiletype ruby
-    autocmd BufNewFile,BufRead *.coffee setfiletype coffee
-    autocmd BufNewFile,BufRead *.rs setfiletype rust
   endif
 
 
@@ -210,3 +212,4 @@ Bundle 'https://github.com/godlygeek/csapprox'
 Bundle "https://github.com/kchmck/vim-coffee-script.git"
 Bundle "fholgado/minibufexpl.vim"
 Bundle 'wting/rust.vim'
+Bundle 'https://github.com/vim-scripts/armasm.git'
