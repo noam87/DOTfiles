@@ -14,3 +14,6 @@
   a = add --all
   c = commit
   gurph = log --graph --oneline
+  poo = pull origin master
+  pee = pull origin development
+  pe = pull origin dev

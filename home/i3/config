@@ -14,6 +14,7 @@ exec clipit
 exec dropbox start
 exec nm-applet
 exec gnome-sound-applet
+exec xmodmap ~/.Xmodmap
 # set background color
 exec --no-startup-id xsetroot -solid "#000"
 
