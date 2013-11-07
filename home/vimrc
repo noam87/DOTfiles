@@ -15,9 +15,10 @@
   set nowrap                " wrap if text is too long to display
   set colorcolumn=80      " Make sure lines don't go over 80 columns
   " set background=dark
-  colorscheme +twilight_dark
+  "colorscheme +symfony_dark
+  colorscheme +summerfruit
   " resize current window to 85 lines
-  let &winwidth = 85
+  let &winwidth = 87
   highlight OverLength ctermbg=red ctermfg=white guibg=#592929
   "match OverLength /\%91v.\+/
 
@@ -44,23 +45,26 @@
     autocmd BufNewFile,BufRead *.scss.erb setfiletype scss 
     autocmd BufNewFile,BufRead *.coffee.erb setfiletype coffee 
     autocmd BufNewFile,BufRead *.asm setfiletype nasm 
+    autocmd BufNewFile,BufRead *.jade setfiletype jade 
     autocmd BufNewFile,BufRead *.s setfiletype armasm 
     autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
-    autocmd BufNewFile,BufRead *.erb,*.html setfiletype html
+    autocmd BufNewFile,BufRead *.erb,*.ejs,*.html setfiletype html
     autocmd BufNewFile,BufRead *.rabl setfiletype ruby
     autocmd BufNewFile,BufRead *.coffee setfiletype coffee
     autocmd BufNewFile,BufRead *.rs setfiletype rust
+    autocmd BufNewFile,BufRead *.elm setfiletype elm
+""    autocmd BufNewFile,BufRead *.md, *.markdown setfiletype markdown
     " Indentation
     autocmd Filetype make setlocal shiftwidth=8 softtabstop=8 tabstop=8 noexpandtab
     autocmd Filetype python setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     autocmd Filetype nasm setlocal shiftwidth=8 softtabstop=8 tabstop=8 expandtab
     autocmd Filetype armasm setlocal shiftwidth=8 softtabstop=8 tabstop=8 expandtab
     autocmd Filetype sql setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
-    autocmd Filetype javascript setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
-    autocmd Filetype markdown setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
+    autocmd Filetype javascript setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
+    autocmd Filetype markdown setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
     autocmd Filetype c setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     autocmd Filetype xml setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
-    autocmd Filetype html setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
+    autocmd Filetype html setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
   endif
 
 
@@ -72,6 +76,8 @@
   set autoindent
   " Real men don't use mouse
   set mouse=a
+  set foldmethod=indent
+  set foldlevel=99
 
 
 
@@ -100,9 +106,8 @@
   " Move right (to jump out of brackets or quotes)
   inoremap <C-@> <Right>
   inoremap <C-Space> <Right>
-
-  " EOL
-  inoremap <C-l> <Esc>$a
+  inoremap <C-l> <Right>
+  inoremap <C-]> <Esc>$a
 
   "Enter
   inoremap <C-X> <Cr>
@@ -118,8 +123,9 @@
 " ------------------------------------------------------------------------------
 
   " Opening and closing braces
-  inoremap {} {<Space><Space>}<Esc>hi
+  inoremap {} {}<Esc>i
   inoremap }{ <Esc>$a<Space>{<CR>}<Esc>O<Tab>
+  inoremap {: <Esc>$a<Space>{<CR>};<Esc>O<Tab>
   inoremap () ()<Esc>i
   inoremap )( <Esc>$a<Space>(<CR>)<Esc>O<Tab>
   inoremap [] []<Esc>i
@@ -130,6 +136,7 @@
   inoremap ;; <Esc>$a;
   " arrows
   inoremap >> ->
+  inoremap ?> =>
   " ruby do ... end
   inoremap <C-E> <Esc>oend<Esc>O<Tab>
   inoremap <C-\> <Esc>$a<Space>do<Space><Bar><Bar><CR>end<Esc>k$i
@@ -187,6 +194,7 @@
 
   " CtrlP
   nnoremap <C-F>f <Esc>:CtrlP<Cr>
+  nnoremap <C-F>u <Esc>:CtrlPClearAllCaches<Cr>
 
   " Indent guides
   "let g:indent_guides_enable_on_vim_startup = 1
@@ -194,15 +202,23 @@
   " MiniBufExpl
   let g:miniBufExplorerAutoStart = 0
   noremap <C-B> <Esc>:MBEFocus<Enter>
-  
-" Vundle
-filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-"filetype plugin indent on
-filetype plugin on
 
-Bundle 'gmarik/vundle'
+  " ShowMarks
+  nnoremap <leader>m <Esc>:DoShowMarks!<Cr>
+  nnoremap <leader>M <Esc>:NoShowMarks!<Cr>
+  
+" Vundle.vim stuff:
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
 Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'kien/ctrlp.vim'
@@ -211,6 +227,26 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'https://github.com/tpope/vim-surround.git'
 Bundle 'https://github.com/godlygeek/csapprox'
 Bundle "https://github.com/kchmck/vim-coffee-script.git"
-Bundle "fholgado/minibufexpl.vim"
 Bundle 'wting/rust.vim'
 Bundle 'https://github.com/vim-scripts/armasm.git'
+Bundle 'https://github.com/jacquesbh/vim-showmarks.git'
+
+" plugin from http://vim-scripts.org/vim/scripts.html
+"Plugin 'L9'
+
+" Git plugin not hosted on GitHub
+"Plugin 'git://git.wincent.com/command-t.git'
+
+" git repos on your local machine (i.e. when working on your own plugin)
+"Plugin 'file:///home/gmarik/path/to/plugin'
+
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+
+" Avoid a name conflict with L9
+"Plugin 'user/L9', {'name': 'newL9'}
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin on    " required

@@ -1,6 +1,6 @@
 [user]
 	name = noam
-	email = clusterfoo@server.fake
+	email = CLUSTERfoo@users.noreply.github.com
 [core]
 	editor = vim
 [merge]
@@ -13,7 +13,11 @@
   s = status
   a = add --all
   c = commit
+  ac = !git add --all && git commit
+  ch = checkout
   gurph = log --graph --oneline
   poo = pull origin master
   pee = pull origin development
   pe = pull origin dev
+[heroku]
+	account = funci
