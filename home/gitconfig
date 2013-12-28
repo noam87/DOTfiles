@@ -13,7 +13,10 @@
   s = status
   a = add --all
   c = commit
+  ch = checkout
   gurph = log --graph --oneline
   poo = pull origin master
   pee = pull origin development
   pe = pull origin dev
+[heroku]
+	account = funci

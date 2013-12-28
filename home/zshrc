@@ -30,7 +30,7 @@ set -o vi
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="$HOME/.cabal/bin:/usr/local/heroku/bin:$PATH"
 
 # Load nvm if there's an .nvm 
 if [ -d .nvm ]; then

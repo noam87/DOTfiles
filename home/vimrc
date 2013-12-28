@@ -17,7 +17,7 @@
   " set background=dark
   colorscheme +twilight_dark
   " resize current window to 85 lines
-  let &winwidth = 85
+  let &winwidth = 87
   highlight OverLength ctermbg=red ctermfg=white guibg=#592929
   "match OverLength /\%91v.\+/
 
@@ -46,17 +46,19 @@
     autocmd BufNewFile,BufRead *.asm setfiletype nasm 
     autocmd BufNewFile,BufRead *.s setfiletype armasm 
     autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
-    autocmd BufNewFile,BufRead *.erb,*.html setfiletype html
+    autocmd BufNewFile,BufRead *.erb,*.ejs,*.html setfiletype html
     autocmd BufNewFile,BufRead *.rabl setfiletype ruby
     autocmd BufNewFile,BufRead *.coffee setfiletype coffee
     autocmd BufNewFile,BufRead *.rs setfiletype rust
+    autocmd BufNewFile,BufRead *.elm setfiletype elm
+    autocmd BufNewFile,BufRead *.md setfiletype markdown
     " Indentation
     autocmd Filetype make setlocal shiftwidth=8 softtabstop=8 tabstop=8 noexpandtab
     autocmd Filetype python setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     autocmd Filetype nasm setlocal shiftwidth=8 softtabstop=8 tabstop=8 expandtab
     autocmd Filetype armasm setlocal shiftwidth=8 softtabstop=8 tabstop=8 expandtab
     autocmd Filetype sql setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
-    autocmd Filetype javascript setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
+    autocmd Filetype javascript setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
     autocmd Filetype markdown setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     autocmd Filetype c setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     autocmd Filetype xml setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
@@ -120,6 +122,7 @@
   " Opening and closing braces
   inoremap {} {<Space><Space>}<Esc>hi
   inoremap }{ <Esc>$a<Space>{<CR>}<Esc>O<Tab>
+  inoremap {: <Esc>$a<Space>{<CR>};<Esc>O<Tab>
   inoremap () ()<Esc>i
   inoremap )( <Esc>$a<Space>(<CR>)<Esc>O<Tab>
   inoremap [] []<Esc>i
@@ -194,6 +197,10 @@
   " MiniBufExpl
   let g:miniBufExplorerAutoStart = 0
   noremap <C-B> <Esc>:MBEFocus<Enter>
+
+  " ShowMarks
+  nnoremap <leader>m <Esc>:DoShowMarks!<Cr>
+  nnoremap <leader>M <Esc>:NoShowMarks!<Cr>
   
 " Vundle
 filetype off
@@ -214,3 +221,4 @@ Bundle "https://github.com/kchmck/vim-coffee-script.git"
 Bundle "fholgado/minibufexpl.vim"
 Bundle 'wting/rust.vim'
 Bundle 'https://github.com/vim-scripts/armasm.git'
+Bundle 'https://github.com/jacquesbh/vim-showmarks.git'
