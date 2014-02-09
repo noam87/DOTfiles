@@ -51,7 +51,7 @@
     autocmd BufNewFile,BufRead *.coffee setfiletype coffee
     autocmd BufNewFile,BufRead *.rs setfiletype rust
     autocmd BufNewFile,BufRead *.elm setfiletype elm
-    autocmd BufNewFile,BufRead *.md setfiletype markdown
+""    autocmd BufNewFile,BufRead *.md, *.markdown setfiletype markdown
     " Indentation
     autocmd Filetype make setlocal shiftwidth=8 softtabstop=8 tabstop=8 noexpandtab
     autocmd Filetype python setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
@@ -62,7 +62,7 @@
     autocmd Filetype markdown setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     autocmd Filetype c setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     autocmd Filetype xml setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
-    autocmd Filetype html setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
+    autocmd Filetype html setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
   endif
 
 
@@ -120,7 +120,7 @@
 " ------------------------------------------------------------------------------
 
   " Opening and closing braces
-  inoremap {} {<Space><Space>}<Esc>hi
+  inoremap {} {}<Esc>i
   inoremap }{ <Esc>$a<Space>{<CR>}<Esc>O<Tab>
   inoremap {: <Esc>$a<Space>{<CR>};<Esc>O<Tab>
   inoremap () ()<Esc>i
