@@ -133,6 +133,7 @@
   inoremap ;; <Esc>$a;
   " arrows
   inoremap >> ->
+  inoremap ?> =>
   " ruby do ... end
   inoremap <C-E> <Esc>oend<Esc>O<Tab>
   inoremap <C-\> <Esc>$a<Space>do<Space><Bar><Bar><CR>end<Esc>k$i
