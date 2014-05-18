@@ -59,7 +59,7 @@
     autocmd Filetype armasm setlocal shiftwidth=8 softtabstop=8 tabstop=8 expandtab
     autocmd Filetype sql setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     autocmd Filetype javascript setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
-    autocmd Filetype markdown setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
+    autocmd Filetype markdown setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
     autocmd Filetype c setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     autocmd Filetype xml setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     autocmd Filetype html setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
@@ -104,9 +104,7 @@
   " Move right (to jump out of brackets or quotes)
   inoremap <C-@> <Right>
   inoremap <C-Space> <Right>
-
-  " EOL
-  inoremap <C-l> <Esc>$a
+  inoremap <C-l> <Right>
 
   "Enter
   inoremap <C-X> <Cr>
