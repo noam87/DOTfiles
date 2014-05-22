@@ -44,6 +44,7 @@
     autocmd BufNewFile,BufRead *.scss.erb setfiletype scss 
     autocmd BufNewFile,BufRead *.coffee.erb setfiletype coffee 
     autocmd BufNewFile,BufRead *.asm setfiletype nasm 
+    autocmd BufNewFile,BufRead *.jade setfiletype jade 
     autocmd BufNewFile,BufRead *.s setfiletype armasm 
     autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
     autocmd BufNewFile,BufRead *.erb,*.ejs,*.html setfiletype html
