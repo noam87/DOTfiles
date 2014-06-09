@@ -205,14 +205,18 @@
   nnoremap <leader>m <Esc>:DoShowMarks!<Cr>
   nnoremap <leader>M <Esc>:NoShowMarks!<Cr>
   
-" Vundle
-filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-"filetype plugin indent on
-filetype plugin on
+" Vundle.vim stuff:
+filetype off                  " required
 
-Bundle 'gmarik/vundle'
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
 Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'kien/ctrlp.vim'
@@ -221,7 +225,26 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'https://github.com/tpope/vim-surround.git'
 Bundle 'https://github.com/godlygeek/csapprox'
 Bundle "https://github.com/kchmck/vim-coffee-script.git"
-Bundle "fholgado/minibufexpl.vim"
 Bundle 'wting/rust.vim'
 Bundle 'https://github.com/vim-scripts/armasm.git'
 Bundle 'https://github.com/jacquesbh/vim-showmarks.git'
+
+" plugin from http://vim-scripts.org/vim/scripts.html
+"Plugin 'L9'
+
+" Git plugin not hosted on GitHub
+"Plugin 'git://git.wincent.com/command-t.git'
+
+" git repos on your local machine (i.e. when working on your own plugin)
+"Plugin 'file:///home/gmarik/path/to/plugin'
+
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+
+" Avoid a name conflict with L9
+"Plugin 'user/L9', {'name': 'newL9'}
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
