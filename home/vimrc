@@ -107,6 +107,7 @@
   inoremap <C-@> <Right>
   inoremap <C-Space> <Right>
   inoremap <C-l> <Right>
+  inoremap <C-]> <Esc>$a
 
   "Enter
   inoremap <C-X> <Cr>
