@@ -3,6 +3,7 @@
 	email = noam@clusterfoo.com
 [core]
 	editor = vim
+	excludesfile = /home/computer/.gitignore_global
 [merge]
 	tool = vimdiff
 [diff]

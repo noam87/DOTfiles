@@ -48,11 +48,12 @@
     autocmd BufNewFile,BufRead *.jade setfiletype jade 
     autocmd BufNewFile,BufRead *.s setfiletype armasm 
     autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
-    autocmd BufNewFile,BufRead *.erb,*.ejs,*.html setfiletype html
+    autocmd BufNewFile,BufRead *.hbs,*.erb,*.ejs,*.html setfiletype html
     autocmd BufNewFile,BufRead *.rabl setfiletype ruby
     autocmd BufNewFile,BufRead *.coffee setfiletype coffee
     autocmd BufNewFile,BufRead *.rs setfiletype rust
     autocmd BufNewFile,BufRead *.elm setfiletype elm
+    autocmd BufNewFile,BufRead *.es6 setfiletype javascript
 ""    autocmd BufNewFile,BufRead *.md, *.markdown setfiletype markdown
     " Indentation
     autocmd Filetype make setlocal shiftwidth=8 softtabstop=8 tabstop=8 noexpandtab
