@@ -1,9 +1,9 @@
 [user]
 	name = noam
-	email = noam@clusterfoo.com
+	email = CLUSTERfoo@users.noreply.github.com
 [core]
 	editor = vim
-	excludesfile = /home/computer/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [merge]
 	tool = vimdiff
 [diff]
