@@ -16,7 +16,8 @@
   set colorcolumn=80      " Make sure lines don't go over 80 columns
   " set background=dark
   "colorscheme +symfony_dark
-  colorscheme +summerfruit
+  "colorscheme +summerfruit
+  colorscheme +made_of_code
   " resize current window to 85 lines
   let &winwidth = 87
   highlight OverLength ctermbg=red ctermfg=white guibg=#592929
@@ -97,7 +98,7 @@
   nnoremap <C-J> <C-W><down>
   nnoremap <C-K> <C-W><up>
   nnoremap <C-L> <C-W><right> 
-  nnoremap tt <Esc>:tabnew<Cr>
+  nnoremap <C-T> <Esc>:tabnew<Cr>
   nnoremap J <Esc>gT
   nnoremap K <Esc>gt
   " Easy split
@@ -105,8 +106,6 @@
   nnoremap <leader>s <Esc>:split<Cr>
 
   " Move right (to jump out of brackets or quotes)
-  inoremap <C-@> <Right>
-  inoremap <C-Space> <Right>
   inoremap <C-l> <Right>
   inoremap <C-]> <Esc>$a
 
