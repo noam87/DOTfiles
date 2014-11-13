@@ -22,3 +22,5 @@
   pe = pull origin dev
 [heroku]
 	account = funci
+[push]
+	default = simple
