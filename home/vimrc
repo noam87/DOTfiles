@@ -31,7 +31,7 @@
 
 
 " ------------------------------------------------------------------------------
-" Syntax 
+" Syntax
 " ------------------------------------------------------------------------------
 
   " Default Indentation
@@ -44,11 +44,11 @@
   " By Filetype
   if has ("autocmd")
     " Syntax
-    autocmd BufNewFile,BufRead *.scss.erb setfiletype scss 
-    autocmd BufNewFile,BufRead *.coffee.erb setfiletype coffee 
-    autocmd BufNewFile,BufRead *.asm setfiletype nasm 
-    autocmd BufNewFile,BufRead *.jade setfiletype jade 
-    autocmd BufNewFile,BufRead *.s setfiletype armasm 
+    autocmd BufNewFile,BufRead *.scss.erb setfiletype scss
+    autocmd BufNewFile,BufRead *.coffee.erb setfiletype coffee
+    autocmd BufNewFile,BufRead *.asm setfiletype nasm
+    autocmd BufNewFile,BufRead *.jade setfiletype jade
+    autocmd BufNewFile,BufRead *.s setfiletype armasm
     autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
     autocmd BufNewFile,BufRead *.hbs,*.erb,*.ejs,*.html setfiletype html
     autocmd BufNewFile,BufRead *.rabl setfiletype ruby
@@ -72,7 +72,7 @@
 
 
 " ------------------------------------------------------------------------------
-" Sessions 
+" Sessions
 " ------------------------------------------------------------------------------
 
   nnoremap <leader>S <Esc>:mksession! session.vim<Cr>
@@ -95,7 +95,7 @@
 
   " Esc while ssh'ing from iPad
   " inoremap qq <Esc>
-  
+
   " Change windows from insert mode
   inoremap <C-W>W <Esc><C-W><C-W>
 
@@ -103,7 +103,7 @@
   nnoremap <C-H> <C-W><left>
   nnoremap <C-J> <C-W><down>
   nnoremap <C-K> <C-W><up>
-  nnoremap <C-L> <C-W><right> 
+  nnoremap <C-L> <C-W><right>
   nnoremap <C-T> <Esc>:tabnew<Cr>
   nnoremap J <Esc>gT
   nnoremap K <Esc>gt
@@ -173,7 +173,7 @@
 " Misc
 " ------------------------------------------------------------------------------
 
-  set warn 
+  set warn
   set viewdir=$HOME/.vimviews/
   set autoprint
   set report=1
@@ -212,7 +212,10 @@
   " ShowMarks
   nnoremap <leader>m <Esc>:DoShowMarks!<Cr>
   nnoremap <leader>M <Esc>:NoShowMarks!<Cr>
-  
+
+  " Whitespace
+  nnoremap <leader>r$ <Esc>:FixWhitespace<Cr>
+
 " Vundle.vim stuff:
 filetype off                  " required
 
@@ -236,6 +239,7 @@ Bundle "https://github.com/kchmck/vim-coffee-script.git"
 Bundle 'wting/rust.vim'
 Bundle 'https://github.com/vim-scripts/armasm.git'
 Bundle 'https://github.com/jacquesbh/vim-showmarks.git'
+Bundle 'bronson/vim-trailing-whitespace'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
