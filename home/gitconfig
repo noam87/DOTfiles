@@ -15,11 +15,11 @@
   a = add --all
   c = commit
   ac = !git add --all && git commit
-  ch = checkout
+  co = checkout
   gurph = log --graph --oneline
+  po = push origin
   poo = pull origin master
-  pee = pull origin development
-  pe = pull origin dev
+  r = rebase -i master
 [heroku]
 	account = funci
 [push]
