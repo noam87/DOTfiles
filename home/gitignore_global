@@ -1,0 +1,5 @@
+*.swp
+*.swo
+*.directory
+*session*.vim
+*TODO.md
