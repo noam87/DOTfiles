@@ -11,11 +11,11 @@ export EDITOR=vim
 # time that oh-my-zsh is loaded.
 ZSH_THEME="nanotech"
 
-# Uncomment following line if you want red dots 
+# Uncomment following line if you want red dots
 # to be displayed while waiting for completion
 COMPLETION_WAITING_DOTS="true"
 
-# Which plugins would you like to load? 
+# Which plugins would you like to load?
 # (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -37,33 +37,43 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 ### Added by the Heroku Toolbelt
 export PATH="$HOME/.cabal/bin:/usr/local/heroku/bin:$PATH"
 
-# Load nvm if there's an .nvm 
+# Load nvm if there's an .nvm
 if [ -d .nvm ]; then
   [[ -s /home/computer/.nvm/nvm.sh ]] && . /home/computer/.nvm/nvm.sh
 fi
 
 ##
-## Below are unique setups. To activate them, create a file with their name in 
-## Home directory, example:
-##     $ touch .setup_00 
-## Will activate Setup 00.
 ##
 
-##################### Setup 00 #################################################
+##################### Configs ##################################################
+# Unique setups. To activate them, create a file with their name in the
+# ~/configs directory.
+# Example:
+#
+#     $ touch configs/ack
+#
+# Will activate the first.
 
-if [ -f '.setup_00' ]; then
+if [ -f 'configs/ack' ]; then
     alias ack=ack-grep
 fi
 
-#################### Setup 02 ##################################################
-
-if [ -f '.setup_02' ]; then
-  # Fixes issue with order of path directories.
+if [ -f 'configs/path_order' ]; then
+  # Fixes issue with order of path directories on mac.
   # export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 fi
 
-################### theScore stup ##############################################
+################### TheScore Setup #############################################
+# File with content:
+#    export GH_OAUTH_TOKEN=b902...
+#    export HIPCHAT_TOKEN=yKYl7...
 
-if [ -f 'ansible-token.sh' ]; then
-  source ansible-token.sh
+if [ -f 'configs/ansible-token.sh' ]; then
+  source configs/ansible-token.sh
 fi
+
+##################### Utility Functions ########################################
+
+function hg {
+  history | grep $1
+}

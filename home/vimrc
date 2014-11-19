@@ -11,14 +11,11 @@
   set showmatch
   set showmode
   set ruler
-  set ic                  " ignore case in search
   set hlsearch
   set nowrap              " wrap if text is too long to display
   set colorcolumn=80      " make sure lines don't go over 80 columns
   " set background=dark
-  "colorscheme +symfony_dark
-  "colorscheme +summerfruit
-  colorscheme +made_of_code
+  colorscheme +twilight_dark
   " resize current window to 85 lines
   let &winwidth = 87
   highlight OverLength ctermbg=red ctermfg=white guibg=#592929

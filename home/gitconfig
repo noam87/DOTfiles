@@ -16,6 +16,7 @@
   c = commit
   ac = !git add --all && git commit
   co = checkout
+  com = checkout master
   gurph = log --graph --oneline
   po = push origin
   poo = pull origin master
