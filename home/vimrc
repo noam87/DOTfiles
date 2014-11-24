@@ -112,9 +112,8 @@
   " Move right (to jump out of brackets or quotes)
   inoremap <C-l> <Right>
   inoremap <C-]> <Esc>$a
-
-  "Enter
-  inoremap <C-X> <Cr>
+  
+  inoremap <C-/> <Esc>:noh<Cr>
 
   " search files. :cw to view list of matches.
   nnoremap <C-F>a <Esc>:vimgrep<Space>

@@ -29,6 +29,10 @@ set -o vi
 ##################### Aliases ##################################################
 
 alias c="clear"
+alias "evim=vim ~/.vimrc"
+alias "ez=vim ~/.zshrc"
+alias "ports=netstat -lntup"
+alias "serve=python -m SimpleHTTPServer"
 
 ##################### PATH Stuff ###############################################
 
@@ -54,8 +58,10 @@ fi
 #
 # Will activate the first.
 
-if [ -f 'configs/ack' ]; then
+if [ -f 'configs/is_linux' ]; then
     alias ack=ack-grep
+    alias "y=xclip -selection clipboard"
+    alias "ei3=vim ~/.i3/config"
 fi
 
 if [ -f 'configs/path_order' ]; then
