@@ -73,7 +73,7 @@
 " Sessions
 " ------------------------------------------------------------------------------
 
-  nnoremap <leader>S <Esc>:mksession! session.vim<Cr>
+  nnoremap <leader>S <Esc>:mksession! session-
 
 " ------------------------------------------------------------------------------
 " Editing Functionality
