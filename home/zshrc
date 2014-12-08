@@ -62,6 +62,7 @@ if [ -f 'configs/is_linux' ]; then
     alias ack=ack-grep
     alias "y=xclip -selection clipboard"
     alias "ei3=vim ~/.i3/config"
+    alias "x=xmodmap ~/.Xmodmap"
 fi
 
 if [ -f 'configs/path_order' ]; then
