@@ -7,6 +7,8 @@ FILES     = FileList[
                   'Xmodmap',
                   'zshrc',
                   'gitconfig',
+                  'gitignore_global',
+                  'xsession',
                   'i3',
                   'scripts'
                 ].pathmap("~/DOTfiles/home/%f")
