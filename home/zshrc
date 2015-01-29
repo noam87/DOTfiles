@@ -79,6 +79,11 @@ if [ -f 'configs/ansible-token.sh' ]; then
   source configs/ansible-token.sh
   alias 'ts-mysql=mysql --host=10.1.2.10 --port=3306 -u thescore'
   alias 'tscd=cd ~/Documents/thescore'
+  alias 'tscds=cd ~/Documents/thescore/sports'
+  alias 'tscd-data=cd ~/Documents/thescore/sports/thescore-data'
+  alias 'tscd-sportsadmin=cd ~/Documents/thescore/sports/sports-admin'
+  alias 'tscd-pulse=cd ~/Documents/thescore/sports/thescore-pulse'
+  alias 'tscd-api=cd ~/Documents/thescore/sports/thescore-api'
 fi
 
 ##################### Utility Functions ########################################
