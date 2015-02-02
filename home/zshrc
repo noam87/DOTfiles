@@ -84,6 +84,7 @@ if [ -f 'configs/ansible-token.sh' ]; then
   alias 'tscd-sportsadmin=cd ~/Documents/thescore/sports/sports-admin'
   alias 'tscd-pulse=cd ~/Documents/thescore/sports/thescore-pulse'
   alias 'tscd-api=cd ~/Documents/thescore/sports/thescore-api'
+  alias 'tscd-zing=cd ~/Documents/thescore/zing'
 fi
 
 ##################### Utility Functions ########################################

@@ -198,6 +198,7 @@
   " CtrlP
   nnoremap <C-F>f <Esc>:CtrlP<Cr>
   nnoremap <C-F>u <Esc>:CtrlPClearAllCaches<Cr>
+  let g:ctrlp_working_path_mode = 'a'
 
   " Indent guides
   "let g:indent_guides_enable_on_vim_startup = 1
@@ -212,6 +213,12 @@
 
   " Whitespace
   nnoremap <leader>r$ <Esc>:FixWhitespace<Cr>
+
+
+
+" ------------------------------------------------------------------------------
+" Vundler Stuff
+" ------------------------------------------------------------------------------
 
 " Vundle.vim stuff:
 filetype off                  " required
