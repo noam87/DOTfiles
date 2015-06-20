@@ -10,7 +10,8 @@ FILES     = FileList[
                   'gitignore_global',
                   'xsession',
                   'i3',
-                  'scripts'
+                  'scripts',
+                  'csirc'
                 ].pathmap("~/DOTfiles/home/%f")
 SYMLINKS  = FILES.pathmap("%{~/DOTfiles/home,~}d/.%f")
 
@@ -31,7 +32,7 @@ task :backup do
   end
 end
 
-task :default => [:backup] do 
+task :default => [:backup] do
   FILES.zip(SYMLINKS).each do |source, symlink|
     sh "ln -s #{source} #{symlink}"
   end
