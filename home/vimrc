@@ -214,6 +214,11 @@
   " Whitespace
   nnoremap <leader>r$ <Esc>:FixWhitespace<Cr>
 
+  " RSpec.vim mappings
+  map <Leader>!f :call RunCurrentSpecFile()<CR>
+  map <Leader>!! :call RunNearestSpec()<CR>
+  map <Leader>!a :call RunAllSpecs()<CR>
+
 
 
 " ------------------------------------------------------------------------------
@@ -244,6 +249,7 @@ Bundle 'wting/rust.vim'
 Bundle 'https://github.com/vim-scripts/armasm.git'
 Bundle 'https://github.com/jacquesbh/vim-showmarks.git'
 Bundle 'bronson/vim-trailing-whitespace'
+Bundle 'thoughtbot/vim-rspec'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
