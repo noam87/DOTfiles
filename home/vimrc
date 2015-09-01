@@ -132,9 +132,10 @@
   inoremap () ()<Esc>i
   inoremap )( <Esc>$a<Space>(<CR>)<Esc>O<Tab>
   inoremap [] []<Esc>i
-  inoremap <Bar><Bar> <Bar><Bar><Esc>i
+  inoremap <Bar><Bar><Bar> <Bar><Bar><Esc>i
   inoremap " ""<Esc>i
   inoremap '' ''<Esc>i
+  inoremap `` ``<Esc>i
   inoremap <> <lt>><Esc>i
   inoremap ;; <Esc>$a;
   " arrows
@@ -215,9 +216,9 @@
   nnoremap <leader>r$ <Esc>:FixWhitespace<Cr>
 
   " RSpec.vim mappings
-  map <Leader>!f :call RunCurrentSpecFile()<CR>
-  map <Leader>!! :call RunNearestSpec()<CR>
-  map <Leader>!a :call RunAllSpecs()<CR>
+  map !f :call RunCurrentSpecFile()<CR>
+  map !! :call RunNearestSpec()<CR>
+  map !a :call RunAllSpecs()<CR>
 
 
 
@@ -250,6 +251,7 @@ Bundle 'https://github.com/vim-scripts/armasm.git'
 Bundle 'https://github.com/jacquesbh/vim-showmarks.git'
 Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'thoughtbot/vim-rspec'
+Bundle 'DataWraith/auto_mkdir'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
