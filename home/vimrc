@@ -255,6 +255,7 @@ Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'DataWraith/auto_mkdir'
 Bundle 'tpope/vim-fugitive'
+Bundle 'JuliaLang/julia-vim'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
