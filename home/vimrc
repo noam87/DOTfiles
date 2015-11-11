@@ -5,6 +5,7 @@
   syntax enable
 
   set t_Co=256
+  set tw=80
   set number
   set scrolloff=10        " display at least 10 lines of context around cursor
   set list
@@ -190,6 +191,7 @@
   set encoding=utf-8      " Necessary to show unicode gylphs
 
   " Call NERDtree
+  noremap <leader>t <Esc>:NERDTree %<CR>
   noremap <C-N> <Esc>:NERDTreeToggle<CR>
   inoremap <C-N> <Esc>:NERDTreeToggle<CR>
 
@@ -252,6 +254,7 @@ Bundle 'https://github.com/jacquesbh/vim-showmarks.git'
 Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'DataWraith/auto_mkdir'
+Bundle 'tpope/vim-fugitive'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
