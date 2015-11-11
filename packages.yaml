@@ -27,7 +27,7 @@ Linux_Only:
         - git-cola                  # git GUI
         - xchat                     # IRC
         - build-essential           # make, g++, and all that jazz
-        - virtualbox                
+        - virtualbox
     System:
         - baobab                    # Disk usage analyzer
         - psensor                   # Temperature indicator
@@ -48,7 +48,7 @@ Linux_Only:
         - openshot                  # Video editor
         - vlc                       # I use it to extract audio from video
 
-OS_X: 
+OS_X:
     Text:
         - DiffMerge
     Utility:
@@ -65,7 +65,7 @@ OS_X:
 
 Vim_Plugins:
     - pathogen                      # Manage vim plugins
-    - vim powerline                 
+    - vim powerline
     - NERDtree                      # Browse directory tree
     - Align                         # Easily align multiple elements
     - FuzzyFinder                   # Fuzzy search in Vim
