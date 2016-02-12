@@ -25,3 +25,5 @@
 	account = funci
 [push]
 	default = simple
+[github]
+	user = noam87
