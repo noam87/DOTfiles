@@ -224,6 +224,12 @@
   map !! :call RunNearestSpec()<CR>
   map !a :call RunAllSpecs()<CR>
 
+  " Rainbow parentheses
+  au VimEnter * RainbowParenthesesToggle
+  au Syntax * RainbowParenthesesLoadRound
+  au Syntax * RainbowParenthesesLoadSquare
+  au Syntax * RainbowParenthesesLoadBraces
+
 
 
 " ------------------------------------------------------------------------------
@@ -258,6 +264,8 @@ Bundle 'thoughtbot/vim-rspec'
 Bundle 'DataWraith/auto_mkdir'
 Bundle 'tpope/vim-fugitive'
 Bundle 'JuliaLang/julia-vim'
+Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'guns/vim-sexp'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
