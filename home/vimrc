@@ -244,6 +244,7 @@ Bundle 'wting/rust.vim'
 Bundle 'https://github.com/vim-scripts/armasm.git'
 Bundle 'https://github.com/jacquesbh/vim-showmarks.git'
 Bundle 'bronson/vim-trailing-whitespace'
+Bundle 'JuliaLang/julia-vim'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
