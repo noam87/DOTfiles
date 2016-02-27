@@ -5,6 +5,7 @@
   syntax enable
 
   set t_Co=256
+  set tw=80
   set number
   set scrolloff=10        " display at least 10 lines of context around cursor
   set list
@@ -54,7 +55,7 @@
     autocmd BufNewFile,BufRead *.elm setfiletype elm
     autocmd BufNewFile,BufRead *.es6 setfiletype javascript
     autocmd BufNewFile,BufRead *.r,*.r3,*.red,*.reds setfiletype rebol
-""    autocmd BufNewFile,BufRead *.md, *.markdown setfiletype markdown
+    "autocmd BufNewFile,BufRead *.md, *.markdown setfiletype markdown
     " Indentation
     autocmd Filetype make setlocal shiftwidth=8 softtabstop=8 tabstop=8 noexpandtab
     autocmd Filetype python setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
@@ -66,6 +67,8 @@
     autocmd Filetype c setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     autocmd Filetype xml setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
     autocmd Filetype html setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
+    " other
+    autocmd Filetype markdown setlocal tw=0 wrap linebreak
   endif
 
 
@@ -132,9 +135,10 @@
   inoremap () ()<Esc>i
   inoremap )( <Esc>$a<Space>(<CR>)<Esc>O<Tab>
   inoremap [] []<Esc>i
-  inoremap <Bar><Bar> <Bar><Bar><Esc>i
+  inoremap <Bar><Bar><Bar> <Bar><Bar><Esc>i
   inoremap " ""<Esc>i
   inoremap '' ''<Esc>i
+  inoremap `` ``<Esc>i
   inoremap <> <lt>><Esc>i
   inoremap ;; <Esc>$a;
   " arrows
@@ -189,6 +193,7 @@
   set encoding=utf-8      " Necessary to show unicode gylphs
 
   " Call NERDtree
+  noremap <leader>t <Esc>:NERDTree %<CR>
   noremap <C-N> <Esc>:NERDTreeToggle<CR>
   inoremap <C-N> <Esc>:NERDTreeToggle<CR>
 
@@ -213,6 +218,17 @@
 
   " Whitespace
   nnoremap <leader>r$ <Esc>:FixWhitespace<Cr>
+
+  " RSpec.vim mappings
+  map !f :call RunCurrentSpecFile()<CR>
+  map !! :call RunNearestSpec()<CR>
+  map !a :call RunAllSpecs()<CR>
+
+  " Rainbow parentheses
+  au VimEnter * RainbowParenthesesToggle
+  au Syntax * RainbowParenthesesLoadRound
+  au Syntax * RainbowParenthesesLoadSquare
+  au Syntax * RainbowParenthesesLoadBraces
 
 
 
@@ -244,7 +260,12 @@ Bundle 'wting/rust.vim'
 Bundle 'https://github.com/vim-scripts/armasm.git'
 Bundle 'https://github.com/jacquesbh/vim-showmarks.git'
 Bundle 'bronson/vim-trailing-whitespace'
+Bundle 'thoughtbot/vim-rspec'
+Bundle 'DataWraith/auto_mkdir'
+Bundle 'tpope/vim-fugitive'
 Bundle 'JuliaLang/julia-vim'
+Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'guns/vim-sexp'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'

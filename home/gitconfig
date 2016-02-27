@@ -1,6 +1,6 @@
 [user]
 	name = noam
-	email = CLUSTERfoo@users.noreply.github.com
+	email = noam87@users.noreply.github.com
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
@@ -25,3 +25,5 @@
 	account = funci
 [push]
 	default = simple
+[github]
+	user = noam87

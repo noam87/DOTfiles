@@ -33,6 +33,8 @@ alias "evim=vim ~/.vimrc"
 alias "ez=vim ~/.zshrc"
 alias "ports=netstat -lntup"
 alias "serve=python -m SimpleHTTPServer"
+alias ggrep='grep -r "<<<<"'
+alias tarr="tar -xvzf"
 
 ##################### PATH Stuff ###############################################
 
