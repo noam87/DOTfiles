@@ -266,6 +266,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'JuliaLang/julia-vim'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'guns/vim-sexp'
+Bundle 'elixir-lang/vim-elixir'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
