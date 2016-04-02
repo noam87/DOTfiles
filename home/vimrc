@@ -179,6 +179,7 @@
   set autoprint
   set report=1
   set history=100
+  set wildignore+=node_modules/**,_build/**
 
 
 
@@ -204,6 +205,7 @@
   nnoremap <C-F>f <Esc>:CtrlP<Cr>
   nnoremap <C-F>u <Esc>:CtrlPClearAllCaches<Cr>
   let g:ctrlp_working_path_mode = 'a'
+  let g:ctrlp_custom_ignore = 'node_modules/_build'
 
   " Indent guides
   "let g:indent_guides_enable_on_vim_startup = 1
