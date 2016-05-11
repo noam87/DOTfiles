@@ -12,7 +12,7 @@ FILES     = FileList[
                   'i3',
                   'scripts',
                   'csirc',
-                  'guilerc'
+                  'guile'
                 ].pathmap("~/DOTfiles/home/%f")
 SYMLINKS  = FILES.pathmap("%{~/DOTfiles/home,~}d/.%f")
 
