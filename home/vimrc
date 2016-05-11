@@ -76,7 +76,8 @@
 " Sessions
 " ------------------------------------------------------------------------------
 
-  nnoremap <leader>S <Esc>:mksession! session-
+  "nnoremap <leader>S <Esc>:mksession! session-
+  nnoremap <leader>S <Esc>:SaveSession! session-
 
 " ------------------------------------------------------------------------------
 " Editing Functionality
@@ -268,6 +269,8 @@ Bundle 'JuliaLang/julia-vim'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'guns/vim-sexp'
 Bundle 'elixir-lang/vim-elixir'
+Bundle 'xolox/vim-session'
+Bundle 'xolox/vim-misc'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'

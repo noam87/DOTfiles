@@ -11,7 +11,8 @@ FILES     = FileList[
                   'xsession',
                   'i3',
                   'scripts',
-                  'csirc'
+                  'csirc',
+                  'guilerc'
                 ].pathmap("~/DOTfiles/home/%f")
 SYMLINKS  = FILES.pathmap("%{~/DOTfiles/home,~}d/.%f")
 
