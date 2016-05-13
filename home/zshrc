@@ -35,6 +35,7 @@ alias "ports=netstat -lntup"
 alias "serve=python -m SimpleHTTPServer"
 alias ggrep='grep -r "<<<<"'
 alias tarr="tar -xvzf"
+alias emacs="emacs -nw"
 
 ##################### PATH Stuff ###############################################
 
