@@ -76,7 +76,8 @@
 " Sessions
 " ------------------------------------------------------------------------------
 
-  nnoremap <leader>S <Esc>:mksession! session-
+  "nnoremap <leader>S <Esc>:mksession! session-
+  nnoremap <leader>S <Esc>:SaveSession! session-
 
 " ------------------------------------------------------------------------------
 " Editing Functionality
@@ -146,7 +147,6 @@
   inoremap ?> =>
   " ruby do ... end
   inoremap <C-E> <Esc>oend<Esc>O<Tab>
-  inoremap <C-\> <Esc>$a<Space>do<Space><Bar><Bar><CR>end<Esc>k$i
   " ruby erb opening and closing <%= >
   inoremap ><lt> <lt>%=<Space><Space>%><Esc>hhi
 
@@ -179,6 +179,7 @@
   set autoprint
   set report=1
   set history=100
+  set wildignore+=node_modules/**,_build/**,deps/**
 
 
 
@@ -204,6 +205,7 @@
   nnoremap <C-F>f <Esc>:CtrlP<Cr>
   nnoremap <C-F>u <Esc>:CtrlPClearAllCaches<Cr>
   let g:ctrlp_working_path_mode = 'a'
+  let g:ctrlp_custom_ignore = 'node_modules\|/_build\|deps'
 
   " Indent guides
   "let g:indent_guides_enable_on_vim_startup = 1
@@ -265,6 +267,10 @@ Bundle 'DataWraith/auto_mkdir'
 Bundle 'tpope/vim-fugitive'
 Bundle 'JuliaLang/julia-vim'
 Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'guns/vim-sexp'
+Bundle 'elixir-lang/vim-elixir'
+Bundle 'xolox/vim-session'
+Bundle 'xolox/vim-misc'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'

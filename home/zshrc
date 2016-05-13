@@ -98,3 +98,13 @@ function hg {
 function vims {
   vim -S session-$1.vim
 }
+
+# grep within phoenix dirs
+function grepp {
+  grep -r $1 --exclude-dir=node_modules --exclude-dir=_build --exclude-dir=deps --exclude-dir=priv
+}
+
+# params old_word new_word
+function replace {
+  grep -rl $1 * | xargs -i@ sed -i "s/$1/$2/g" @
+}
