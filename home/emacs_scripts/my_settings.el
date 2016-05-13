@@ -7,3 +7,12 @@
 
 ;; Easier file/buffer browsing.
 (ido-mode t)
+
+;; Enable mouse
+(require 'mouse)
+(xterm-mouse-mode t)
+(defun track-mouse (e))
+(setq mouse-sel-mode t)
+
+;; Width
+(setq-default fill-column 80)
