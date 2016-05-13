@@ -265,7 +265,6 @@ Bundle 'DataWraith/auto_mkdir'
 Bundle 'tpope/vim-fugitive'
 Bundle 'JuliaLang/julia-vim'
 Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'guns/vim-sexp'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
