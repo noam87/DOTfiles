@@ -16,3 +16,6 @@
 
 ;; Width
 (setq-default fill-column 80)
+
+;;Indendation
+(setq-default indent-tabs-mode nil)
