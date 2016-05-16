@@ -5,6 +5,9 @@
 (global-linum-mode t)
 (setq linum-format "%d ")
 
+;; Show column count
+(setq column-number-mode t)
+
 ;; Easier file/buffer browsing.
 (ido-mode t)
 

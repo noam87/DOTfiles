@@ -34,3 +34,11 @@
   (ruby-block-mode t)
   (setq ruby-block-highlight-toggle t))
 ;;ruby-block
+
+;;fill-column-indicator
+(use-package fill-column-indicator
+  :config
+  (define-globalized-minor-mode 
+    global-fci-mode fci-mode (lambda () (fci-mode 1)))
+  (global-fci-mode 1))
+;;fill-column-indicator
