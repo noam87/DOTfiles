@@ -20,14 +20,6 @@
 (use-package elixir-mode)
 ;; elixir-mode
 
-;; find-file-in-project
-(use-package find-file-in-project
-  :ensure find-file-in-project
-  :config
-  (global-set-key (kbd "C-c C-f") 'find-file-in-project-by-selected))
-(use-package find-file-in-project :config)
-;; find-file-in-project
-
 ;;ruby-block
 (use-package ruby-block
   :config
@@ -42,3 +34,18 @@
     global-fci-mode fci-mode (lambda () (fci-mode 1)))
   (global-fci-mode 1))
 ;;fill-column-indicator
+
+;;undo-tree
+(use-package undo-tree)
+;;undo-tree
+
+;;helm
+(use-package helm-config
+  :ensure helm
+  :config
+  (global-set-key (kbd "C-c C-f") 'helm-find))
+;;helm
+
+;;yaml-mode
+(use-package yaml-mode)
+;;yaml-mode
