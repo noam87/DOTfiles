@@ -232,6 +232,28 @@
   au Syntax * RainbowParenthesesLoadSquare
   au Syntax * RainbowParenthesesLoadBraces
 
+  let g:rbpt_colorpairs = [
+      \ ['brown',       'RoyalBlue3'],
+      \ ['Darkblue',    'SeaGreen3'],
+      \ ['darkgray',    'DarkOrchid3'],
+      \ ['darkgreen',   'firebrick3'],
+      \ ['darkcyan',    'RoyalBlue3'],
+      \ ['darkred',     'SeaGreen3'],
+      \ ['darkmagenta', 'DarkOrchid3'],
+      \ ['yellow',       'firebrick3'],
+      \ ['gray',        'RoyalBlue3'],
+      \ ['green',       'SeaGreen3'],
+      \ ['darkmagenta', 'DarkOrchid3'],
+      \ ['Darkblue',    'firebrick3'],
+      \ ['darkgreen',   'RoyalBlue3'],
+      \ ['darkcyan',    'SeaGreen3'],
+      \ ['darkred',     'DarkOrchid3'],
+      \ ['red',         'firebrick3'],
+      \ ]
+
+  " vim-session
+  let g:session_autoload = 'no'
+
 
 
 " ------------------------------------------------------------------------------
@@ -267,10 +289,11 @@ Bundle 'DataWraith/auto_mkdir'
 Bundle 'tpope/vim-fugitive'
 Bundle 'JuliaLang/julia-vim'
 Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'guns/vim-sexp'
+"Bundle 'guns/vim-sexp'
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'xolox/vim-session'
 Bundle 'xolox/vim-misc'
+Bundle 'idris-hackers/idris-vim'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'

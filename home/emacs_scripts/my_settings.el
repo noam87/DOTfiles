@@ -24,9 +24,9 @@
 (setq-default indent-tabs-mode nil)
 
 ;;Keep working directory
-(add-hook 'find-file-hook
-          (lambda ()
-            (setq default-directory command-line-default-directory)))
+;;(add-hook 'find-file-hook
+;;          (lambda ()
+;;            (setq default-directory command-line-default-directory)))
 
 ;;Copy from system clipboard
 (setq x-select-enable-clipboard t)
