@@ -55,6 +55,7 @@
     autocmd BufNewFile,BufRead *.elm setfiletype elm
     autocmd BufNewFile,BufRead *.es6 setfiletype javascript
     autocmd BufNewFile,BufRead *.r,*.r3,*.red,*.reds setfiletype rebol
+    autocmd BufNewFile,BufRead *.rkt setfiletype scheme
     "autocmd BufNewFile,BufRead *.md, *.markdown setfiletype markdown
     " Indentation
     autocmd Filetype make setlocal shiftwidth=8 softtabstop=8 tabstop=8 noexpandtab
