@@ -3,3 +3,6 @@
 *.directory
 *session*.vim
 *TODO.md
+*~
+#*
+.DS_Store
