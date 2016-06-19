@@ -56,8 +56,11 @@ if [ -d .nvm ]; then
   fi
 fi
 
-##
-##
+##################### PATH Stuff ###############################################
+
+alias ucd="cd ~/Documents/udio"
+alias ucdd="cd ~/Documents/udio/udio"
+alias ucda="cd ~/Documents/udio/UdioAPI"
 
 ##################### Configs ##################################################
 # Unique setups. To activate them, create a file with their name in the
