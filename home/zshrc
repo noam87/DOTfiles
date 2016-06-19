@@ -80,23 +80,6 @@ if [ -f 'configs/path_order' ]; then
   # export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 fi
 
-################### TheScore Setup #############################################
-# File with content:
-#    export GH_OAUTH_TOKEN=b902...
-#    export HIPCHAT_TOKEN=yKYl7...
-
-if [ -f 'configs/ansible-token.sh' ]; then
-  source configs/ansible-token.sh
-  alias 'ts-mysql=mysql --host=10.1.2.10 --port=3306 -u thescore'
-  alias 'tscd=cd ~/Documents/thescore'
-  alias 'tscds=cd ~/Documents/thescore/sports'
-  alias 'tscd-data=cd ~/Documents/thescore/sports/thescore-data'
-  alias 'tscd-sportsadmin=cd ~/Documents/thescore/sports/sports-admin'
-  alias 'tscd-pulse=cd ~/Documents/thescore/sports/thescore-pulse'
-  alias 'tscd-api=cd ~/Documents/thescore/sports/thescore-api'
-  alias 'tscd-zing=cd ~/Documents/thescore/zing'
-fi
-
 ##################### Utility Functions ########################################
 
 function hg {
