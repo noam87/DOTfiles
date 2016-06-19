@@ -36,6 +36,7 @@ alias "serve=python -m SimpleHTTPServer"
 alias ggrep='grep -r "<<<<"'
 alias tarr="tar -xvzf"
 alias emacs="emacs -nw"
+alias phoenixs="iex -S mix phoenix.server"
 
 ##################### PATH Stuff ###############################################
 

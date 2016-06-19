@@ -1,1 +1,1 @@
-iunmap ;;
+iunmap <buffer> ;;
