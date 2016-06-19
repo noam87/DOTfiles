@@ -46,7 +46,14 @@ export PATH="$HOME/.cabal/bin:/usr/local/heroku/bin:$PATH"
 
 # Load nvm if there's an .nvm
 if [ -d .nvm ]; then
-  [[ -s /home/computer/.nvm/nvm.sh ]] && . /home/computer/.nvm/nvm.sh
+  if [ -f 'configs/is_linux' ]; then
+    [[ -s /home/computer/.nvm/nvm.sh ]] && . /home/computer/.nvm/nvm.sh
+  fi
+
+  if [ -f 'configs/is_mac' ]; then
+    export NVM_DIR="/Users/computer/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+  fi
 fi
 
 ##
