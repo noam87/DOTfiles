@@ -57,6 +57,11 @@ if [ -d .nvm ]; then
   fi
 fi
 
+# Load psql mac
+if [ -f 'configs/is_mac' ]; then
+  export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
+fi
+
 ##################### PATH Stuff ###############################################
 
 alias ucd="cd ~/Documents/udio"
@@ -77,11 +82,6 @@ if [ -f 'configs/is_linux' ]; then
     alias "y=xclip -selection clipboard"
     alias "ei3=vim ~/.i3/config"
     alias "x=xmodmap ~/.Xmodmap"
-fi
-
-if [ -f 'configs/path_order' ]; then
-  # Fixes issue with order of path directories on mac.
-  # export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 fi
 
 ##################### Utility Functions ########################################
