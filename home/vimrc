@@ -99,6 +99,10 @@
   " Esc while ssh'ing from iPad
   " inoremap qq <Esc>
 
+  " change pwd to where open file is
+  nnoremap <leader>cd :cd %:p:h<Cr>:pwd<CR>
+  "command CDC cd %:p:h
+
   " Change windows from insert mode
   inoremap <C-W>W <Esc><C-W><C-W>
 
@@ -276,7 +280,7 @@ Plugin 'gmarik/Vundle.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'kien/ctrlp.vim'
-Bundle 'vim-scripts/ScrollColors'
+"Bundle 'vim-scripts/ScrollColors'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'https://github.com/tpope/vim-surround.git'
 Bundle 'https://github.com/godlygeek/csapprox'
