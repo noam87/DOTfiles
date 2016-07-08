@@ -101,6 +101,8 @@
 
   " change pwd to where open file is
   nnoremap <leader>cd :cd %:p:h<Cr>:pwd<CR>
+  " change pwd to where open file is, only for current window
+  nnoremap <leader>lcd :lcd %:p:h<Cr>:pwd<CR>
   "command CDC cd %:p:h
 
   " Change windows from insert mode
