@@ -78,7 +78,9 @@
 " ------------------------------------------------------------------------------
 
   "nnoremap <leader>S <Esc>:mksession! session-
-  nnoremap <leader>S <Esc>:SaveSession! session-
+  nnoremap <leader>SN <Esc>:SaveSession!
+  nnoremap <leader>SO <Esc>:OpenSession
+  nnoremap <leader>SD <Esc>:DeleteSession
 
 " ------------------------------------------------------------------------------
 " Editing Functionality
