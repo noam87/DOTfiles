@@ -82,6 +82,7 @@ if [ -f 'configs/is_linux' ]; then
     alias "y=xclip -selection clipboard"
     alias "ei3=vim ~/.i3/config"
     alias "x=xmodmap ~/.Xmodmap"
+    alias "upd=sudo apt-get update && sudo apt-get upgrade"
 fi
 
 ##################### Utility Functions ########################################
