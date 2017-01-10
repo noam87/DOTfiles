@@ -64,9 +64,10 @@ fi
 
 ##################### PATH Stuff ###############################################
 
-alias ucd="cd ~/Documents/udio"
-alias ucdd="cd ~/Documents/udio/udio"
-alias ucda="cd ~/Documents/udio/UdioAPI"
+alias bcd="cd ~/Documents/vpl-adtech/VACM/vacm_back_end"
+alias fcd="cd ~/Documents/vpl-adtech/VACM/vacm_front_end"
+alias ncd="cd ~/Documents/noamswebsite"
+alias nocd="cd ~/Documents/noamswebsite_out"
 
 ##################### Configs ##################################################
 # Unique setups. To activate them, create a file with their name in the
