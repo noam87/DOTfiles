@@ -84,6 +84,8 @@ if [ -f 'configs/is_linux' ]; then
     alias "ei3=vim ~/.i3/config"
     alias "x=xmodmap ~/.Xmodmap"
     alias "upd=sudo apt-get update && sudo apt-get upgrade"
+    alias "bye=sudo echo "sleeping..." && i3lock && sudo pm-suspend"
+    alias "hyb=sudo echo "hybernating..." && i3lock && sudo pm-hibernate"
 fi
 
 ##################### Utility Functions ########################################
