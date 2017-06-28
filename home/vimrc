@@ -89,7 +89,7 @@
   set autoindent
   " Real men don't use mouse
   set mouse=a
-  set foldmethod=indent
+  set foldmethod=manual
   set foldlevel=99
 
 
