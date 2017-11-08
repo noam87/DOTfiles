@@ -124,8 +124,10 @@
 
   " Move right (to jump out of brackets or quotes)
   inoremap <C-l> <Right>
+  " Move to end of EOL
   inoremap <C-]> <Esc>$a
 
+  " Unhighlight
   inoremap <C-/> <Esc>:noh<Cr>
 
   " search files. :cw to view list of matches.
