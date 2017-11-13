@@ -88,6 +88,7 @@
 
   set autoindent
   " Real men don't use mouse
+  set ttymouse=xterm2
   set mouse=a
   set foldmethod=manual
   set foldlevel=99

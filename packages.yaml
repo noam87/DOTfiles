@@ -4,6 +4,7 @@ Command_Line:
         - ack-grep
         - vim
     Utility:
+        - ranger                    # File manager with vim key bindings
         - git                       # git
         - tig                       # text-based git GUI
         - mc                        # Midnight Commander
@@ -11,6 +12,7 @@ Command_Line:
         - tree                      # Display filesystem tree
         - pstree                    # Display process tree
         - nmon                      # A system monitor
+        - htop                      # Like top with a pretty GUI
     Environment:
         - tmux                      # Screen multiplexer
         - zsh                       # Z-shell
@@ -18,13 +20,11 @@ Command_Line:
 
 Linux_Only:
     Text:
-        - ReText                    # Markdown
         - meld                      # Diff/Merge
         - Clipit                    # Retains history of your clipboard
     Utility:
         - arandr                    # GUI for xrandr
         - dmenu                     # Easily call up applications under Xmonad
-        - git-cola                  # git GUI
         - xchat                     # IRC
         - build-essential           # make, g++, and all that jazz
         - virtualbox
@@ -34,9 +34,6 @@ Linux_Only:
         - acpi                      # display battery levels
     Desktop_Environment:
         - i3                        # Better than Xmonad
-        - ranger                    # File manager with vim key bindings
-        - xmonad                    # Tiling Window Manager
-        - xmobar                    # text-based menu bar
         - dmenu (suckless-tools)    # Call up applications
         - Trayer                    # A dock for icons
     Screencasting:
@@ -62,14 +59,4 @@ OS_X:
         - Homebrew
         - ClamXav
         - CleanApp
-
-Vim_Plugins:
-    - pathogen                      # Manage vim plugins
-    - vim powerline
-    - NERDtree                      # Browse directory tree
-    - Align                         # Easily align multiple elements
-    - FuzzyFinder                   # Fuzzy search in Vim
-    - MiniBufExpl                   # Explore active and inactive buffers
-    - NerdCommenter                 # Comment and uncomment multiple lines
-    - Obsession                     # Autosave current session
 ...
