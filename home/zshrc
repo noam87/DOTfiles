@@ -86,6 +86,7 @@ if [ -f 'configs/is_linux' ]; then
     alias "upd=sudo apt-get update && sudo apt-get upgrade"
     alias "bye=sudo echo "sleeping..." && i3lock && sudo pm-suspend"
     alias "hyb=sudo echo "hybernating..." && i3lock && sudo pm-hibernate"
+    alias version="lsb_release -a" # ubuntu version
 fi
 
 ##################### Utility Functions ########################################
